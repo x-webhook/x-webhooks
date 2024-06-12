@@ -1,0 +1,5 @@
+{
+  "packageName": "com.xwebhook.kotlin.internal",
+  "modelPackage": "com.xwebhook.kotlin.models",
+  "useCoroutines": true
+}

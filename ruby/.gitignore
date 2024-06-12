@@ -1,0 +1,16 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+*.gem
+
+lib/xwebhook/api
+lib/xwebhook/models
+lib/xwebhook/api_client.rb
+lib/xwebhook/api_error.rb
+lib/xwebhook/configuration.rb
+.openapi-generator

@@ -1,0 +1,7 @@
+{
+    "library": "httpclient",
+    "optionalProjectFile": false,    
+    "packageName": "Xwebhook",
+    "sourceFolder": "Xwebhook/Generated/OpenApi",
+    "targetFramework": "netstandard2.1"
+}
