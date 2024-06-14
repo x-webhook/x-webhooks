@@ -6,7 +6,7 @@ description = "Xwebhook webhooks server"
 
 authors = ["Xwebhook Inc. <oss@xwebhook.com>"]
 homepage = "https://www.xwebhook.com"
-repository = "https://github.com/xwebhook/xwebhook-webhooks"
+repository = "https://github.com/x-webhook/x-webhooks"
 readme = "../README.md"
 edition = "2021"
 publish = false

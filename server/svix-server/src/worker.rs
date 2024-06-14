@@ -53,7 +53,7 @@ pub type CaseSensitiveHeaderMap = HashMap<String, HeaderValue>;
 const JITTER_DELTA: f32 = 0.2;
 const OVERLOAD_PENALTY_SECS: u64 = 60;
 
-const USER_AGENT: &str = concat!("Xwebhook-Webhooks/", env!("CARGO_PKG_VERSION"));
+const USER_AGENT: &str = concat!("X-Webhooks/", env!("CARGO_PKG_VERSION"));
 
 /// Send the MessageAttemptFailingEvent after exceeding this number of failed attempts
 const OP_WEBHOOKS_SEND_FAILING_EVENT_AFTER: usize = 4;

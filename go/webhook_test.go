@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	xwebhook "github.com/xwebhook/xwebhook-webhooks/go"
+	xwebhook "github.com/x-webhook/x-webhooks/go"
 )
 
 var defaultMsgID = "msg_p5jXN8AQM9LWM0D4loKWxJek"
@@ -36,9 +36,9 @@ func newTestPayload(timestamp time.Time) *testPayload {
 	tp.signature, _ = wh.Sign(tp.id, tp.timestamp, tp.payload)
 
 	tp.header = http.Header{}
-	tp.header.Set("xwebhook-id", tp.id)
-	tp.header.Set("xwebhook-signature", tp.signature)
-	tp.header.Set("xwebhook-timestamp", fmt.Sprint(tp.timestamp.Unix()))
+	tp.header.Set("x-id", tp.id)
+	tp.header.Set("x-signature", tp.signature)
+	tp.header.Set("x-timestamp", fmt.Sprint(tp.timestamp.Unix()))
 
 	return tp
 }

@@ -152,7 +152,7 @@ senders:
 # (optionally) transformed via a js function, then forwarded to an "output."
 #
 # Inputs types are "webhook" which allows you to configure a verification scheme
-# (either "xwebhook" or "none") or "xwebhook-webhook" which is a shorthand version.
+# (either "xwebhook" or "none") or "x-webhook" which is a shorthand version.
 #
 # ```
 #   input:
@@ -163,12 +163,12 @@ senders:
 #       endpoint_secret: "whsec_XXXXX="
 #   # same as...
 #   input:
-#     type: "xwebhook-webhook"
+#     type: "x-webhook"
 #     path_id: "shorthand"
 #     endpoint_secret: "whsec_XXXXX="
 # ```
 #
-# The `path_id` in webhook and xwebhook-webhook inputs represents the trailing
+# The `path_id` in webhook and x-webhook inputs represents the trailing
 # path segment that will connect to the given output.
 # For example, running bridge with the HTTP listen address set to
 # `localhost:5000`, the above examples would map to the following URLS:

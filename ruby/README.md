@@ -10,7 +10,7 @@
 
 Ruby library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![Gem](https://img.shields.io/gem/v/xwebhook)](https://rubygems.org/gems/xwebhook)
 
 

@@ -10,7 +10,7 @@
 
 Kotlin library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![Maven Central (xwebhook-kotlin)](https://img.shields.io/maven-central/v/com.xwebhook/xwebhook?label=maven-central%20(xwebhook-kotlin))](https://search.maven.org/artifact/com.xwebhook.kotlin/xwebhook-kotlin)
 
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)

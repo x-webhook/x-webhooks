@@ -10,7 +10,7 @@
 
 Rust library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![Crates.io](https://img.shields.io/crates/v/xwebhook)](https://crates.io/crates/xwebhook)
 [![docs.rs](https://docs.rs/xwebhook/badge.svg)](https://docs.rs/xwebhook/)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)

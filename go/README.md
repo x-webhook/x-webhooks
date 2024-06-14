@@ -10,8 +10,8 @@
 
 Go library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/xwebhook/xwebhook-webhooks)](https://pkg.go.dev/github.com/xwebhook/xwebhook-webhooks/go)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/x-webhook/x-webhooks)](https://pkg.go.dev/github.com/x-webhook/x-webhooks/go)
 
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
 

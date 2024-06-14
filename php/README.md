@@ -10,7 +10,7 @@
 
 PHP library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![Packagist Version](https://img.shields.io/packagist/v/xwebhook/xwebhook)](https://packagist.org/packages/xwebhook/xwebhook)
 
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
@@ -58,7 +58,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 ## Manual Installation
 
-For now you can download the [latest release](https://github.com/xwebhook/xwebhook-webhooks/releases). Then, to use the bindings, include the `init.php` file.
+For now you can download the [latest release](https://github.com/x-webhook/x-webhooks/releases). Then, to use the bindings, include the `init.php` file.
 
 ```php
 require_once('/path/to/xwebhook-php/init.php');

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xwebhook/xwebhook-webhooks/go/internal/openapi"
+	"github.com/x-webhook/x-webhooks/go/internal/openapi"
 )
 
 type (

@@ -5,9 +5,9 @@
   </a>
 </h1>
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
-[![Build Status](https://github.com/xwebhook/xwebhook-webhooks/workflows/Server%20CI/badge.svg)](https://github.com/xwebhook/xwebhook-webhooks/actions)
-[![Server Security](https://github.com/xwebhook/xwebhook-webhooks/actions/workflows/server-security.yml/badge.svg)](https://github.com/xwebhook/xwebhook-webhooks/actions/workflows/server-security.yml)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
+[![Build Status](https://github.com/x-webhook/x-webhooks/workflows/Server%20CI/badge.svg)](https://github.com/x-webhook/x-webhooks/actions)
+[![Server Security](https://github.com/x-webhook/x-webhooks/actions/workflows/server-security.yml/badge.svg)](https://github.com/x-webhook/x-webhooks/actions/workflows/server-security.yml)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
 
@@ -26,9 +26,9 @@ The easiest way is to use [rustup](https://rustup.rs/).
 
 ```
 # Clone the repository
-git clone https://github.com/xwebhook/xwebhook-webhooks
+git clone https://github.com/x-webhook/x-webhooks
 # Change to the source directory
-cd xwebhook-webhooks/server/
+cd x-webhooks/server/
 # Build
 cargo install --path xwebhook-server
 ```

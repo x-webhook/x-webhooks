@@ -10,7 +10,7 @@
 
 Python library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![PyPI](https://img.shields.io/pypi/v/xwebhook.svg)](https://pypi.python.org/pypi/xwebhook/)
 
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)

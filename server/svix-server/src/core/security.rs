@@ -68,7 +68,7 @@ pub struct CustomClaim {
 }
 
 pub const INVALID_TOKEN_ERR: &str = "Invalid token";
-pub const JWT_SECRET_ERR : &str = "Authentication failed. JWT signing secrets can not be used as tokens, please refer to https://github.com/xwebhook/xwebhook-webhooks#authentication for more information.";
+pub const JWT_SECRET_ERR : &str = "Authentication failed. JWT signing secrets can not be used as tokens, please refer to https://github.com/x-webhook/x-webhooks#authentication for more information.";
 
 pub async fn permissions_from_bearer(parts: &mut Parts, state: &AppState) -> Result<Permissions> {
     let TypedHeader(Authorization(bearer)) =

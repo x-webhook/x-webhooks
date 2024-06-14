@@ -108,7 +108,7 @@ async fn test_client_basic_operation() {
         .post(&receiver.uri)
         .header(
             USER_AGENT,
-            HeaderValue::from_static(concat!("Xwebhook-Webhooks/", env!("CARGO_PKG_VERSION"))),
+            HeaderValue::from_static(concat!("X-Webhooks/", env!("CARGO_PKG_VERSION"))),
         )
         .version(Version::HTTP_11)
         .json(&TestSerializable {

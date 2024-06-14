@@ -3,7 +3,7 @@ package xwebhook
 import (
 	"net/http"
 
-	"github.com/xwebhook/xwebhook-webhooks/go/internal/openapi"
+	"github.com/x-webhook/x-webhooks/go/internal/openapi"
 )
 
 // Error provides access to the body, status, and error on returned errors.

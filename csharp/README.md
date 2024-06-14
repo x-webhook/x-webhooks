@@ -10,8 +10,8 @@
 
 C# library for interacting with the Xwebhook API and verifying webhook signatures
 
-![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-webhooks.svg)
-[![Nuget](https://img.shields.io/nuget/v/xwebhook)](https://www.nuget.org/packages/Xwebhook/)
+![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
+[![Nuget](https://img.shields.io/nuget/v/x-webhook)](https://www.nuget.org/packages/Xwebhook/)
 
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
 

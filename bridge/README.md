@@ -201,9 +201,9 @@ The easiest way is to use [rustup](https://rustup.rs/).
 
 ```
 # Clone the repository
-git clone https://github.com/xwebhook/xwebhook-webhooks
+git clone https://github.com/x-webhook/x-webhooks
 # Change to the source directory
-cd xwebhook-webhooks/bridge/
+cd x-webhooks/bridge/
 # Build
 cargo install --path xwebhook-bridge
 ```
@@ -215,9 +215,9 @@ Consult the [Dockerfile](./Dockerfile) for a good reference of what's required a
 
 ```
 # Clone the repository
-git clone https://github.com/xwebhook/xwebhook-webhooks
+git clone https://github.com/x-webhook/x-webhooks
 # Change to the source directory
-cd xwebhook-webhooks/bridge/
+cd x-webhooks/bridge/
 # Build
 docker build --tag xwebhook-bridge:local .
 ```
