@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | Optional unique identifier for the application | [optional] 
+**Description** | Pointer to **NullableString** | The application description | [optional] 
 
 ## Methods
 
@@ -143,6 +144,41 @@ HasUid returns a boolean if a field has been set.
 `func (o *ApplicationIn) UnsetUid()`
 
 UnsetUid ensures that no value is present for Uid, not even an explicit nil
+### GetDescription
+
+`func (o *ApplicationIn) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *ApplicationIn) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *ApplicationIn) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *ApplicationIn) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
+
+### SetDescriptionNil
+
+`func (o *ApplicationIn) SetDescriptionNil(b bool)`
+
+ SetDescriptionNil sets the value for Description to be an explicit nil
+
+### UnsetDescription
+`func (o *ApplicationIn) UnsetDescription()`
+
+UnsetDescription ensures that no value is present for Description, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

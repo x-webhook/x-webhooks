@@ -1,5 +1,8 @@
 {
     "packageName": "openapi",
     "isGoSubmodule": true,
-    "enumClassPrefix": true
+    "enumClassPrefix": true,
+    "additionalProperties": {
+        "withGoCodegenTests": true
+    }
 }

@@ -15083,6 +15083,7 @@ components:
           key: metadata
         rateLimit: 1
         name: My first application
+        description: This is my first application
       properties:
         metadata:
           additionalProperties:
@@ -15105,6 +15106,13 @@ components:
           minLength: 1
           nullable: true
           pattern: ^[a-zA-Z0-9\-_.]+$
+          type: string
+        description:
+          description: The application description
+          example: This is my first application
+          maxLength: 256
+          minLength: 1
+          nullable: true
           type: string
       required:
       - name
@@ -18603,6 +18611,7 @@ components:
             key: metadata
           rateLimit: 1
           name: My first application
+          description: This is my first application
         channels:
         - project_123
         - group_2

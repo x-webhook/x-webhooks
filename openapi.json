@@ -148,6 +148,14 @@
                         "nullable": true,
                         "pattern": "^[a-zA-Z0-9\\-_.]+$",
                         "type": "string"
+                    },
+                    "description": {
+                        "description": "The application description",
+                        "example": "This is my first application",
+                        "maxLength": 256,
+                        "minLength": 1,
+                        "nullable": true,
+                        "type": "string" 
                     }
                 },
                 "required": [

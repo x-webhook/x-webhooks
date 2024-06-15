@@ -21,6 +21,8 @@ type ApplicationIn struct {
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// Optional unique identifier for the application
 	Uid NullableString `json:"uid,omitempty"`
+	// The application description
+	Description NullableString `json:"description,omitempty"`
 }
 
 // NewApplicationIn instantiates a new ApplicationIn object
@@ -181,6 +183,48 @@ func (o *ApplicationIn) UnsetUid() {
 	o.Uid.Unset()
 }
 
+// GetDescription returns the Description field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *ApplicationIn) GetDescription() string {
+	if o == nil || o.Description.Get() == nil {
+		var ret string
+		return ret
+	}
+	return *o.Description.Get()
+}
+
+// GetDescriptionOk returns a tuple with the Description field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *ApplicationIn) GetDescriptionOk() (*string, bool) {
+	if o == nil  {
+		return nil, false
+	}
+	return o.Description.Get(), o.Description.IsSet()
+}
+
+// HasDescription returns a boolean if a field has been set.
+func (o *ApplicationIn) HasDescription() bool {
+	if o != nil && o.Description.IsSet() {
+		return true
+	}
+
+	return false
+}
+
+// SetDescription gets a reference to the given NullableString and assigns it to the Description field.
+func (o *ApplicationIn) SetDescription(v string) {
+	o.Description.Set(&v)
+}
+// SetDescriptionNil sets the value for Description to be an explicit nil
+func (o *ApplicationIn) SetDescriptionNil() {
+	o.Description.Set(nil)
+}
+
+// UnsetDescription ensures that no value is present for Description, not even an explicit nil
+func (o *ApplicationIn) UnsetDescription() {
+	o.Description.Unset()
+}
+
 func (o ApplicationIn) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.Metadata != nil {
@@ -194,6 +238,9 @@ func (o ApplicationIn) MarshalJSON() ([]byte, error) {
 	}
 	if o.Uid.IsSet() {
 		toSerialize["uid"] = o.Uid.Get()
+	}
+	if o.Description.IsSet() {
+		toSerialize["description"] = o.Description.Get()
 	}
 	return json.Marshal(toSerialize)
 }
