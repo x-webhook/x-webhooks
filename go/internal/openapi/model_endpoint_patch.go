@@ -21,6 +21,7 @@ type EndpointPatch struct {
 	Disabled *bool `json:"disabled,omitempty"`
 	FilterTypes []string `json:"filterTypes,omitempty"`
 	Metadata *map[string]string `json:"metadata,omitempty"`
+	Headers *map[string]string `json:"headers,omitempty"`
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// The endpoint's verification secret. If `null` is passed, a secret is automatically generated. Format: `base64` encoded random bytes optionally prefixed with `whsec_`. Recommended size: 24.
 	Secret NullableString `json:"secret,omitempty"`
@@ -207,6 +208,38 @@ func (o *EndpointPatch) HasMetadata() bool {
 // SetMetadata gets a reference to the given map[string]string and assigns it to the Metadata field.
 func (o *EndpointPatch) SetMetadata(v map[string]string) {
 	o.Metadata = &v
+}
+
+// GetHeaders returns the Headers field value if set, zero value otherwise.
+func (o *EndpointPatch) GetHeaders() map[string]string {
+	if o == nil || o.Headers == nil {
+		var ret map[string]string
+		return ret
+	}
+	return *o.Headers
+}
+
+// GetHeadersOk returns a tuple with the Headers field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *EndpointPatch) GetHeadersOk() (*map[string]string, bool) {
+	if o == nil || o.Headers == nil {
+		return nil, false
+	}
+	return o.Headers, true
+}
+
+// HasHeaders returns a boolean if a field has been set.
+func (o *EndpointPatch) HasHeaders() bool {
+	if o != nil && o.Headers != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetHeaders gets a reference to the given map[string]string and assigns it to the Headers field.
+func (o *EndpointPatch) SetHeaders(v map[string]string) {
+	o.Headers = &v
 }
 
 // GetRateLimit returns the RateLimit field value if set, zero value otherwise (both if not set or set to explicit null).
@@ -415,6 +448,9 @@ func (o EndpointPatch) MarshalJSON() ([]byte, error) {
 	}
 	if o.Metadata != nil {
 		toSerialize["metadata"] = o.Metadata
+	}
+	if o.Headers != nil {
+		toSerialize["headers"] = o.Headers
 	}
 	if o.RateLimit.IsSet() {
 		toSerialize["rateLimit"] = o.RateLimit.Get()

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **EventType** | **string** | The event type&#39;s name | 
 **Payload** | **map[string]interface{}** |  | 
 **PayloadRetentionPeriod** | Pointer to **int64** |  | [optional] [default to 90]
+**Headers** | Pointer to **map[string]string** |  | [optional] 
 **Tags** | Pointer to **[]string** | List of free-form tags that can be filtered by when listing messages | [optional] 
 **TransformationsParams** | Pointer to **map[string]interface{}** | Extra parameters to pass to Transformations (for future use) | [optional] 
 
@@ -191,6 +192,31 @@ SetPayloadRetentionPeriod sets PayloadRetentionPeriod field to given value.
 `func (o *MessageIn) HasPayloadRetentionPeriod() bool`
 
 HasPayloadRetentionPeriod returns a boolean if a field has been set.
+
+### GetHeaders
+
+`func (o *MessageIn) GetHeaders() map[string]string`
+
+GetHeaders returns the Headers field if non-nil, zero value otherwise.
+
+### GetHeadersOk
+
+`func (o *MessageIn) GetHeadersOk() (*map[string]string, bool)`
+
+GetHeadersOk returns a tuple with the Headers field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHeaders
+
+`func (o *MessageIn) SetHeaders(v map[string]string)`
+
+SetHeaders sets Headers field to given value.
+
+### HasHeaders
+
+`func (o *MessageIn) HasHeaders() bool`
+
+HasHeaders returns a boolean if a field has been set.
 
 ### GetTags
 

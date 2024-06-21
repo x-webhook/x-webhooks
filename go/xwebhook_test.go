@@ -32,32 +32,36 @@ func setup() {
 	var err error
 	ctx := context.Background()
 	// new xwebhook
-	token := "apikeysec_02859f3d7a785bcfb24a0371a0db024154a5"
+	token := "apikeysec_67953dd27583033feef24d45fd2bb2962359"
 	opts := &xwebhook.XwebhookOptions{
 		Debug: true,
 		ServerUrl: &url.URL{
 			Scheme: "http",
 			Host:   "localhost:8181",
 		},
+		// ServerUrl: &url.URL{
+		// 	Scheme: "https",
+		// 	Host:   "api-webhook.mtsocialdao.com",
+		// },
 	}
 	xwh = xwebhook.New(token, opts)
 
 	// create event type
-	evt, err := xwh.EventType.Create(ctx, openapi.NewEventTypeIn("my first event type", "mew.created"))
+	evt, err := xwh.EventType.Create(ctx, openapi.NewEventTypeIn("my first event type", "mew.updated"))
 	if err != nil {
-		log.Panicf("create evt failed, err %v", err)
+		log.Panicf("create evt failed, err %v, evt %+v", err.Error(), evt)
 	}
 	eventTypeName = evt.Name
 
 	// create application
-	app, err := xwh.Application.Create(ctx, openapi.NewApplicationIn("myapp"))
+	app, err := xwh.Application.Create(ctx, openapi.NewApplicationIn("myapp1"))
 	if err != nil {
 		log.Panicf("create app failed, err %v", err)
 	}
 	appId = app.Id
 
 	// create endpoint
-	epIn := openapi.NewEndpointIn("http://localhost:20811")
+	epIn := openapi.NewEndpointIn("http://localhost:28111/webhook")
 	epIn.SetFilterTypes([]string{eventTypeName})
 	ep, err := xwh.Endpoint.Create(ctx, appId, epIn)
 	if err != nil {

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Disabled** | Pointer to **bool** |  | [optional] [default to false]
 **FilterTypes** | Pointer to **[]string** |  | [optional] 
 **Metadata** | Pointer to **map[string]string** |  | [optional] [default to {}]
+**Headers** | Pointer to **map[string]string** |  | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Secret** | Pointer to **NullableString** | The endpoint&#39;s verification secret. If &#x60;null&#x60; is passed, a secret is automatically generated. Format: &#x60;base64&#x60; encoded random bytes optionally prefixed with &#x60;whsec_&#x60;. Recommended size: 24. | [optional] 
 **Uid** | Pointer to **NullableString** | Optional unique identifier for the endpoint | [optional] 
@@ -178,6 +179,31 @@ SetMetadata sets Metadata field to given value.
 `func (o *EndpointIn) HasMetadata() bool`
 
 HasMetadata returns a boolean if a field has been set.
+
+### GetHeaders
+
+`func (o *EndpointIn) GetHeaders() map[string]string`
+
+GetHeaders returns the Headers field if non-nil, zero value otherwise.
+
+### GetHeadersOk
+
+`func (o *EndpointIn) GetHeadersOk() (*map[string]string, bool)`
+
+GetHeadersOk returns a tuple with the Headers field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHeaders
+
+`func (o *EndpointIn) SetHeaders(v map[string]string)`
+
+SetHeaders sets Headers field to given value.
+
+### HasHeaders
+
+`func (o *EndpointIn) HasHeaders() bool`
+
+HasHeaders returns a boolean if a field has been set.
 
 ### GetRateLimit
 

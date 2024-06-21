@@ -15694,6 +15694,9 @@ components:
       type: object
     EndpointIn:
       example:
+        headers:
+          X-Example: "123"
+          X-Foobar: Bar
         uid: unique-ep-identifier
         metadata:
           key: metadata
@@ -15752,6 +15755,14 @@ components:
           additionalProperties:
             type: string
           default: {}
+          type: object
+        headers:
+          additionalProperties:
+            nullable: true
+            type: string
+          example:
+            X-Example: "123"
+            X-Foobar: Bar
           type: object
         rateLimit:
           format: uint16
@@ -16057,6 +16068,9 @@ components:
       type: object
     EndpointPatch:
       example:
+        headers:
+          X-Example: "123"
+          X-Foobar: Bar
         uid: unique-ep-identifier
         metadata:
           key: metadata
@@ -16099,6 +16113,14 @@ components:
         metadata:
           additionalProperties:
             type: string
+          type: object
+        headers:
+          additionalProperties:
+            nullable: true
+            type: string
+          example:
+            X-Example: "123"
+            X-Foobar: Bar
           type: object
         rateLimit:
           format: uint16
@@ -18604,6 +18626,9 @@ components:
     MessageIn:
       example:
         eventId: unique-msg-identifier
+        headers:
+          X-Example: "123"
+          X-Foobar: Bar
         payloadRetentionPeriod: 90
         application:
           uid: unique-app-identifier
@@ -18669,6 +18694,14 @@ components:
           maximum: 90
           minimum: 5
           type: integer
+        headers:
+          additionalProperties:
+            nullable: true
+            type: string
+          example:
+            X-Example: "123"
+            X-Foobar: Bar
+          type: object
         tags:
           description: List of free-form tags that can be filtered by when listing
             messages

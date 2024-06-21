@@ -864,6 +864,17 @@
                         },
                         "default": {},
                         "type": "object"
+                    },                    
+                    "headers": {
+                        "additionalProperties": {
+                            "nullable": true,
+                            "type": "string"
+                        },
+                        "example": {
+                            "X-Example": "123",
+                            "X-Foobar": "Bar"
+                        },
+                        "type": "object"
                     },
                     "rateLimit": {
                         "format": "uint16",
@@ -1207,6 +1218,17 @@
                     "metadata": {
                         "additionalProperties": {
                             "type": "string"
+                        },
+                        "type": "object"
+                    },                    
+                    "headers": {
+                        "additionalProperties": {
+                            "nullable": true,
+                            "type": "string"
+                        },
+                        "example": {
+                            "X-Example": "123",
+                            "X-Foobar": "Bar"
                         },
                         "type": "object"
                     },
@@ -3331,6 +3353,17 @@
                         "maximum": 90,
                         "minimum": 5,
                         "type": "integer"
+                    },                    
+                    "headers": {
+                        "additionalProperties": {
+                            "nullable": true,
+                            "type": "string"
+                        },
+                        "example": {
+                            "X-Example": "123",
+                            "X-Foobar": "Bar"
+                        },
+                        "type": "object"
                     },
                     "tags": {
                         "description": "List of free-form tags that can be filtered by when listing messages",
