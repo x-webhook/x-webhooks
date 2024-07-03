@@ -27,6 +27,9 @@ type EndpointOut struct {
 	// The ep's ID
 	Id string `json:"id"`
 	Metadata map[string]string `json:"metadata"`
+	Headers *map[string]string `json:"headers,omitempty"`
+	// The filter rules for the message payload.
+	PayloadRules map[string]map[string]interface{} `json:"payloadRules,omitempty"`
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// Optional unique identifier for the endpoint
 	Uid NullableString `json:"uid,omitempty"`
@@ -257,6 +260,71 @@ func (o *EndpointOut) SetMetadata(v map[string]string) {
 	o.Metadata = v
 }
 
+// GetHeaders returns the Headers field value if set, zero value otherwise.
+func (o *EndpointOut) GetHeaders() map[string]string {
+	if o == nil || o.Headers == nil {
+		var ret map[string]string
+		return ret
+	}
+	return *o.Headers
+}
+
+// GetHeadersOk returns a tuple with the Headers field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *EndpointOut) GetHeadersOk() (*map[string]string, bool) {
+	if o == nil || o.Headers == nil {
+		return nil, false
+	}
+	return o.Headers, true
+}
+
+// HasHeaders returns a boolean if a field has been set.
+func (o *EndpointOut) HasHeaders() bool {
+	if o != nil && o.Headers != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetHeaders gets a reference to the given map[string]string and assigns it to the Headers field.
+func (o *EndpointOut) SetHeaders(v map[string]string) {
+	o.Headers = &v
+}
+
+// GetPayloadRules returns the PayloadRules field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *EndpointOut) GetPayloadRules() map[string]map[string]interface{} {
+	if o == nil  {
+		var ret map[string]map[string]interface{}
+		return ret
+	}
+	return o.PayloadRules
+}
+
+// GetPayloadRulesOk returns a tuple with the PayloadRules field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *EndpointOut) GetPayloadRulesOk() (*map[string]map[string]interface{}, bool) {
+	if o == nil || o.PayloadRules == nil {
+		return nil, false
+	}
+	return &o.PayloadRules, true
+}
+
+// HasPayloadRules returns a boolean if a field has been set.
+func (o *EndpointOut) HasPayloadRules() bool {
+	if o != nil && o.PayloadRules != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetPayloadRules gets a reference to the given map[string]map[string]interface{} and assigns it to the PayloadRules field.
+func (o *EndpointOut) SetPayloadRules(v map[string]map[string]interface{}) {
+	o.PayloadRules = v
+}
+
 // GetRateLimit returns the RateLimit field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *EndpointOut) GetRateLimit() int32 {
 	if o == nil || o.RateLimit.Get() == nil {
@@ -435,6 +503,12 @@ func (o EndpointOut) MarshalJSON() ([]byte, error) {
 	}
 	if true {
 		toSerialize["metadata"] = o.Metadata
+	}
+	if o.Headers != nil {
+		toSerialize["headers"] = o.Headers
+	}
+	if o.PayloadRules != nil {
+		toSerialize["payloadRules"] = o.PayloadRules
 	}
 	if o.RateLimit.IsSet() {
 		toSerialize["rateLimit"] = o.RateLimit.Get()

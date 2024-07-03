@@ -23,6 +23,8 @@ type EndpointIn struct {
 	FilterTypes []string `json:"filterTypes,omitempty"`
 	Metadata *map[string]string `json:"metadata,omitempty"`
 	Headers *map[string]string `json:"headers,omitempty"`
+	// The filter rules for the message payload.
+	PayloadRules map[string]map[string]interface{} `json:"payloadRules,omitempty"`
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// The endpoint's verification secret. If `null` is passed, a secret is automatically generated. Format: `base64` encoded random bytes optionally prefixed with `whsec_`. Recommended size: 24.
 	Secret NullableString `json:"secret,omitempty"`
@@ -256,6 +258,39 @@ func (o *EndpointIn) SetHeaders(v map[string]string) {
 	o.Headers = &v
 }
 
+// GetPayloadRules returns the PayloadRules field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *EndpointIn) GetPayloadRules() map[string]map[string]interface{} {
+	if o == nil  {
+		var ret map[string]map[string]interface{}
+		return ret
+	}
+	return o.PayloadRules
+}
+
+// GetPayloadRulesOk returns a tuple with the PayloadRules field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *EndpointIn) GetPayloadRulesOk() (*map[string]map[string]interface{}, bool) {
+	if o == nil || o.PayloadRules == nil {
+		return nil, false
+	}
+	return &o.PayloadRules, true
+}
+
+// HasPayloadRules returns a boolean if a field has been set.
+func (o *EndpointIn) HasPayloadRules() bool {
+	if o != nil && o.PayloadRules != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetPayloadRules gets a reference to the given map[string]map[string]interface{} and assigns it to the PayloadRules field.
+func (o *EndpointIn) SetPayloadRules(v map[string]map[string]interface{}) {
+	o.PayloadRules = v
+}
+
 // GetRateLimit returns the RateLimit field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *EndpointIn) GetRateLimit() int32 {
 	if o == nil || o.RateLimit.Get() == nil {
@@ -467,6 +502,9 @@ func (o EndpointIn) MarshalJSON() ([]byte, error) {
 	}
 	if o.Headers != nil {
 		toSerialize["headers"] = o.Headers
+	}
+	if o.PayloadRules != nil {
+		toSerialize["payloadRules"] = o.PayloadRules
 	}
 	if o.RateLimit.IsSet() {
 		toSerialize["rateLimit"] = o.RateLimit.Get()

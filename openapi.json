@@ -876,6 +876,21 @@
                         },
                         "type": "object"
                     },
+                    "payloadRules": {
+                        "additionalProperties": {
+                            "type": "object"
+                        },
+                        "description": "The filter rules for the message payload.",
+                        "example": {
+                            "type": "tx.created",
+                            "chain": "ton",
+                            "amount": {
+                                "$gt": "400"
+                            }
+                        },
+                        "nullable": true,
+                        "type": "object"
+                    },
                     "rateLimit": {
                         "format": "uint16",
                         "minimum": 1,
@@ -1137,6 +1152,32 @@
                         "additionalProperties": {
                             "type": "string"
                         },
+                        "type": "object"
+                    },                    
+                    "headers": {
+                        "additionalProperties": {
+                            "nullable": true,
+                            "type": "string"
+                        },
+                        "example": {
+                            "X-Example": "123",
+                            "X-Foobar": "Bar"
+                        },
+                        "type": "object"
+                    },
+                    "payloadRules": {
+                        "additionalProperties": {
+                            "type": "object"
+                        },
+                        "description": "The filter rules for the message payload.",
+                        "example": {
+                            "type": "tx.created",
+                            "chain": "ton",
+                            "amount": {
+                                "$gt": "400"
+                            }
+                        },
+                        "nullable": true,
                         "type": "object"
                     },
                     "rateLimit": {

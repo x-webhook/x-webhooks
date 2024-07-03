@@ -15706,6 +15706,11 @@ components:
         - group_2
         description: An example endpoint name
         disabled: false
+        payloadRules:
+          type: tx.created
+          chain: ton
+          amount:
+            $gt: "400"
         secret: whsec_C2FVsBQIhrscChlQIMV+b5sSYspob7oD
         filterTypes:
         - user.signup
@@ -15763,6 +15768,17 @@ components:
           example:
             X-Example: "123"
             X-Foobar: Bar
+          type: object
+        payloadRules:
+          additionalProperties:
+            type: object
+          description: The filter rules for the message payload.
+          example:
+            type: tx.created
+            chain: ton
+            amount:
+              $gt: "400"
+          nullable: true
           type: object
         rateLimit:
           format: uint16
@@ -15963,22 +15979,30 @@ components:
       type: object
     EndpointOut:
       example:
-        createdAt: 2000-01-23T04:56:07.000+00:00
-        uid: unique-ep-identifier
+        headers:
+          X-Example: "123"
+          X-Foobar: Bar
         metadata:
           key: metadata
         rateLimit: 0
+        description: description
+        version: 1
+        url: https://example.com/webhook/
+        createdAt: 2000-01-23T04:56:07.000+00:00
+        uid: unique-ep-identifier
         channels:
         - project_123
         - group_2
-        description: description
         disabled: false
+        payloadRules:
+          type: tx.created
+          chain: ton
+          amount:
+            $gt: "400"
         id: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
         filterTypes:
         - user.signup
         - user.deleted
-        version: 1
-        url: https://example.com/webhook/
         updatedAt: 2000-01-23T04:56:07.000+00:00
       properties:
         channels:
@@ -16028,6 +16052,25 @@ components:
         metadata:
           additionalProperties:
             type: string
+          type: object
+        headers:
+          additionalProperties:
+            nullable: true
+            type: string
+          example:
+            X-Example: "123"
+            X-Foobar: Bar
+          type: object
+        payloadRules:
+          additionalProperties:
+            type: object
+          description: The filter rules for the message payload.
+          example:
+            type: tx.created
+            chain: ton
+            amount:
+              $gt: "400"
+          nullable: true
           type: object
         rateLimit:
           format: uint16
@@ -17613,39 +17656,55 @@ components:
       example:
         iterator: iterator
         data:
-        - createdAt: 2000-01-23T04:56:07.000+00:00
-          uid: unique-ep-identifier
+        - headers:
+            X-Example: "123"
+            X-Foobar: Bar
           metadata:
             key: metadata
           rateLimit: 0
+          description: description
+          version: 1
+          url: https://example.com/webhook/
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          uid: unique-ep-identifier
           channels:
           - project_123
           - group_2
-          description: description
           disabled: false
+          payloadRules:
+            type: tx.created
+            chain: ton
+            amount:
+              $gt: "400"
           id: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
           filterTypes:
           - user.signup
           - user.deleted
-          version: 1
-          url: https://example.com/webhook/
           updatedAt: 2000-01-23T04:56:07.000+00:00
-        - createdAt: 2000-01-23T04:56:07.000+00:00
-          uid: unique-ep-identifier
+        - headers:
+            X-Example: "123"
+            X-Foobar: Bar
           metadata:
             key: metadata
           rateLimit: 0
+          description: description
+          version: 1
+          url: https://example.com/webhook/
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          uid: unique-ep-identifier
           channels:
           - project_123
           - group_2
-          description: description
           disabled: false
+          payloadRules:
+            type: tx.created
+            chain: ton
+            amount:
+              $gt: "400"
           id: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
           filterTypes:
           - user.signup
           - user.deleted
-          version: 1
-          url: https://example.com/webhook/
           updatedAt: 2000-01-23T04:56:07.000+00:00
         prevIterator: -iterator
         done: true

@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **FilterTypes** | Pointer to **[]string** |  | [optional] 
 **Id** | **string** | The ep&#39;s ID | 
 **Metadata** | **map[string]string** |  | 
+**Headers** | Pointer to **map[string]string** |  | [optional] 
+**PayloadRules** | Pointer to **map[string]map[string]interface{}** | The filter rules for the message payload. | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | Optional unique identifier for the endpoint | [optional] 
 **UpdatedAt** | **time.Time** |  | 
@@ -211,6 +213,66 @@ and a boolean to check if the value has been set.
 SetMetadata sets Metadata field to given value.
 
 
+### GetHeaders
+
+`func (o *EndpointOut) GetHeaders() map[string]string`
+
+GetHeaders returns the Headers field if non-nil, zero value otherwise.
+
+### GetHeadersOk
+
+`func (o *EndpointOut) GetHeadersOk() (*map[string]string, bool)`
+
+GetHeadersOk returns a tuple with the Headers field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetHeaders
+
+`func (o *EndpointOut) SetHeaders(v map[string]string)`
+
+SetHeaders sets Headers field to given value.
+
+### HasHeaders
+
+`func (o *EndpointOut) HasHeaders() bool`
+
+HasHeaders returns a boolean if a field has been set.
+
+### GetPayloadRules
+
+`func (o *EndpointOut) GetPayloadRules() map[string]map[string]interface{}`
+
+GetPayloadRules returns the PayloadRules field if non-nil, zero value otherwise.
+
+### GetPayloadRulesOk
+
+`func (o *EndpointOut) GetPayloadRulesOk() (*map[string]map[string]interface{}, bool)`
+
+GetPayloadRulesOk returns a tuple with the PayloadRules field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPayloadRules
+
+`func (o *EndpointOut) SetPayloadRules(v map[string]map[string]interface{})`
+
+SetPayloadRules sets PayloadRules field to given value.
+
+### HasPayloadRules
+
+`func (o *EndpointOut) HasPayloadRules() bool`
+
+HasPayloadRules returns a boolean if a field has been set.
+
+### SetPayloadRulesNil
+
+`func (o *EndpointOut) SetPayloadRulesNil(b bool)`
+
+ SetPayloadRulesNil sets the value for PayloadRules to be an explicit nil
+
+### UnsetPayloadRules
+`func (o *EndpointOut) UnsetPayloadRules()`
+
+UnsetPayloadRules ensures that no value is present for PayloadRules, not even an explicit nil
 ### GetRateLimit
 
 `func (o *EndpointOut) GetRateLimit() int32`
