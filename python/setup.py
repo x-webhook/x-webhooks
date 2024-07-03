@@ -87,8 +87,8 @@ setup(
     version=get_version_string(),
     description="Xwebhook webhooks API client and webhook verification library",
     author="Xwebhook",
-    author_email="development@xwebhook.com",
-    url="https://www.xwebhook.com",
+    author_email="development@webhook.openweb3.io",
+    url="https://webhook.openweb3.io",
     license="MIT",
     keywords=[
         "xwebhook",

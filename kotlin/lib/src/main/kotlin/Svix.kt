@@ -6,11 +6,11 @@ class Xwebhook(token: String, options: XwebhookOptions = XwebhookOptions()) {
         if (options.wantedServerUrl == null) {
             val region = tokenParts.last()
             if (region == "us") {
-                options.serverUrl = "https://api.us.xwebhook.com"
+                options.serverUrl = "https://api.webhook.openweb3.io"
             } else if (region == "eu") {
-                options.serverUrl = "https://api.eu.xwebhook.com"
+                options.serverUrl = "https://api.webhook.openweb3.io"
             } else if (region == "in") {
-                options.serverUrl = "https://api.in.xwebhook.com"
+                options.serverUrl = "https://api.webhook.openweb3.io"
             }
         }
     }

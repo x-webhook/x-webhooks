@@ -96,9 +96,9 @@ export interface XwebhookOptions {
 }
 
 const REGIONS = [
-  { region: "us", url: "https://api.us.xwebhook.com" },
-  { region: "eu", url: "https://api.eu.xwebhook.com" },
-  { region: "in", url: "https://api.in.xwebhook.com" },
+  { region: "us", url: "https://api.webhook.openweb3.io" },
+  { region: "eu", url: "https://api.webhook.openweb3.io" },
+  { region: "in", url: "https://api.webhook.openweb3.io" },
 ];
 
 export class Xwebhook {
@@ -115,7 +115,7 @@ export class Xwebhook {
 
   public constructor(token: string, options: XwebhookOptions = {}) {
     const regionalUrl = REGIONS.find((x) => x.region === token.split(".")[1])?.url;
-    const baseUrl: string = options.serverUrl ?? regionalUrl ?? "https://api.xwebhook.com";
+    const baseUrl: string = options.serverUrl ?? regionalUrl ?? "https://api.webhook.openweb3.io";
 
     const baseServer = new ServerConfiguration<any>(baseUrl, {});
 
@@ -906,7 +906,7 @@ export class Webhook {
     } else if (payload.constructor.name === "Buffer") {
       payload = payload.toString();
     } else {
-      throw new Error("Expected payload to be of type string or Buffer. Please refer to https://docs.xwebhook.com/receiving/verifying-payloads/how for more information.");
+      throw new Error("Expected payload to be of type string or Buffer. Please refer to https://docs.webhook.openweb3.io/receiving/verifying-payloads/how for more information.");
     }
 
     const encoder = new TextEncoder();

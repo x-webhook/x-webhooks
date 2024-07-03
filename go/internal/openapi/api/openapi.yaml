@@ -4,12 +4,12 @@ info:
   version: 1.1.1
   x-logo:
     altText: Xwebhook Logo
-    url: https://www.xwebhook.com/static/img/brand-padded.svg
+    url: https://webhook.openweb3.io/static/img/brand-padded.svg
 servers:
 - description: The Xwebhook EU region
-  url: https://api.eu.xwebhook.com/
+  url: https://api.webhook.openweb3.io/
 - description: The Xwebhook US region
-  url: https://api.us.xwebhook.com/
+  url: https://api.webhook.openweb3.io/
 tags:
 - description: Consumer Applications are where messages are sent to. In most cases
     you would want to have one application for each of your users.
@@ -167,7 +167,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app' \
+            'https://api.webhook.openweb3.io/api/v1/app' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -352,7 +352,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app' \
+            'https://api.webhook.openweb3.io/api/v1/app' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -501,7 +501,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/stats/usage' \
+            'https://api.webhook.openweb3.io/api/v1/app/stats/usage' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -611,7 +611,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -723,7 +723,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -885,7 +885,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PATCH' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -1067,7 +1067,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -1338,7 +1338,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/attempt/endpoint/{endpoint_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/attempt/endpoint/{endpoint_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -1608,7 +1608,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/attempt/msg/{msg_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/attempt/msg/{msg_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -1755,7 +1755,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -2005,7 +2005,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -2139,7 +2139,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -2264,7 +2264,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -2483,7 +2483,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PATCH' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -2737,7 +2737,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -2880,7 +2880,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/headers' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/headers' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -3041,7 +3041,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PATCH' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/headers' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/headers' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -3205,7 +3205,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/headers' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/headers' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -3458,7 +3458,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/msg' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/msg' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -3681,7 +3681,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/mtls' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/mtls' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -3829,7 +3829,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/mtls' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/mtls' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -3954,7 +3954,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/oauth' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/oauth' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -4159,7 +4159,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/oauth' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/oauth' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -4339,7 +4339,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/recover' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/recover' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -4517,7 +4517,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/replay-missing' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/replay-missing' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -4530,7 +4530,7 @@ paths:
         Get the endpoint's signing secret.
 
         This is used to verify the authenticity of the webhook.
-        For more information please refer to [the consuming webhooks docs](https://docs.xwebhook.com/consuming-webhooks/).
+        For more information please refer to [the consuming webhooks docs](https://docs.webhook.openweb3.io/consuming-webhooks/).
       operationId: v1.endpoint.get-secret
       parameters:
       - description: The app's ID or UID
@@ -4657,7 +4657,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/secret' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/secret' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -4828,7 +4828,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/secret/rotate' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/secret/rotate' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -5004,7 +5004,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/send-example' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/send-example' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -5158,7 +5158,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/stats' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/stats' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -5294,7 +5294,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -5455,7 +5455,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PATCH' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -5609,7 +5609,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation-template/oauth/hubspot' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation-template/oauth/hubspot' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -5795,7 +5795,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation/simulate' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/endpoint/{endpoint_id}/transformation/simulate' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -5976,7 +5976,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/events' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/events' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -6125,7 +6125,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/inbound/msg/{inbound_token}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/inbound/msg/{inbound_token}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -6248,7 +6248,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/inbound/rotate-url' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/inbound/rotate-url' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -6396,7 +6396,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -6555,7 +6555,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -6678,7 +6678,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration/{integ_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration/{integ_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -6803,7 +6803,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration/{integ_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration/{integ_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -6964,7 +6964,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration/{integ_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration/{integ_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -7098,7 +7098,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration/{integ_id}/key' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration/{integ_id}/key' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -7238,7 +7238,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/integration/{integ_id}/key/rotate' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/integration/{integ_id}/key/rotate' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -7461,7 +7461,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -7722,7 +7722,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -7868,7 +7868,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -8131,7 +8131,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/attempt' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/attempt' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -8277,7 +8277,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/attempt/{attempt_id}' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/attempt/{attempt_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -8414,7 +8414,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/attempt/{attempt_id}/content' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/attempt/{attempt_id}/content' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -8560,7 +8560,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/attempt/{attempt_id}/headers' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/attempt/{attempt_id}/headers' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -8686,7 +8686,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/content' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/content' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -8847,7 +8847,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/endpoint' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/endpoint' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -9107,7 +9107,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/endpoint/{endpoint_id}/attempt' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/endpoint/{endpoint_id}/attempt' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -9255,7 +9255,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/endpoint/{endpoint_id}/resend' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/endpoint/{endpoint_id}/resend' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -9386,7 +9386,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/msg/{msg_id}/raw' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/msg/{msg_id}/raw' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -9520,7 +9520,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/app/{app_id}/stats' \
+            'https://api.webhook.openweb3.io/api/v1/app/{app_id}/stats' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -9703,7 +9703,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/auth/app-portal-access/{app_id}' \
+            'https://api.webhook.openweb3.io/api/v1/auth/app-portal-access/{app_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -9865,7 +9865,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/auth/app/{app_id}/expire-all' \
+            'https://api.webhook.openweb3.io/api/v1/auth/app/{app_id}/expire-all' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -9997,7 +9997,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/auth/dashboard-access/{app_id}' \
+            'https://api.webhook.openweb3.io/api/v1/auth/dashboard-access/{app_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -10105,7 +10105,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/auth/logout' \
+            'https://api.webhook.openweb3.io/api/v1/auth/logout' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -10241,7 +10241,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/auth/one-time-token' \
+            'https://api.webhook.openweb3.io/api/v1/auth/one-time-token' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -10511,7 +10511,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/environment/export' \
+            'https://api.webhook.openweb3.io/api/v1/environment/export' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -10618,7 +10618,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/environment/export' \
+            'https://api.webhook.openweb3.io/api/v1/environment/export' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -10775,7 +10775,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/environment/import' \
+            'https://api.webhook.openweb3.io/api/v1/environment/import' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -10878,7 +10878,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/environment/settings' \
+            'https://api.webhook.openweb3.io/api/v1/environment/settings' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -11036,7 +11036,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/event-type' \
+            'https://api.webhook.openweb3.io/api/v1/event-type' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -11231,7 +11231,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/event-type' \
+            'https://api.webhook.openweb3.io/api/v1/event-type' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -11348,7 +11348,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/export/openapi' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/export/openapi' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -11515,7 +11515,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/import/openapi' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/import/openapi' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -11666,7 +11666,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/schema/generate-example' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/schema/generate-example' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -11796,7 +11796,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/{event_type_name}' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/{event_type_name}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -11907,7 +11907,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/{event_type_name}' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/{event_type_name}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -12068,7 +12068,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PATCH' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/{event_type_name}' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/{event_type_name}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -12260,7 +12260,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/{event_type_name}' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/{event_type_name}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -12379,7 +12379,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/{event_type_name}/retry-schedule' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/{event_type_name}/retry-schedule' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -12529,7 +12529,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/event-type/{event_type_name}/retry-schedule' \
+            'https://api.webhook.openweb3.io/api/v1/event-type/{event_type_name}/retry-schedule' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -12696,7 +12696,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/events' \
+            'https://api.webhook.openweb3.io/api/v1/events' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -12757,7 +12757,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/health' \
+            'https://api.webhook.openweb3.io/api/v1/health' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -12966,7 +12966,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/stats/app/{app_id}/attempt' \
+            'https://api.webhook.openweb3.io/api/v1/stats/app/{app_id}/attempt' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -13124,7 +13124,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/stats/app/{app_id}/ep/{endpoint_id}/attempt' \
+            'https://api.webhook.openweb3.io/api/v1/stats/app/{app_id}/ep/{endpoint_id}/attempt' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -13275,7 +13275,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/stats/usage/app' \
+            'https://api.webhook.openweb3.io/api/v1/stats/usage/app' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -13381,7 +13381,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/stats/usage/event-types' \
+            'https://api.webhook.openweb3.io/api/v1/stats/usage/event-types' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -13512,7 +13512,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -13680,7 +13680,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -13822,7 +13822,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/generate' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/generate' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -13960,7 +13960,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/oauth/discord' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/oauth/discord' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -14098,7 +14098,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/oauth/hubspot' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/oauth/hubspot' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -14236,7 +14236,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/oauth/slack' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/oauth/slack' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -14396,7 +14396,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'POST' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/simulate' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/simulate' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -14504,7 +14504,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'DELETE' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/{transformation_template_id}' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/{transformation_template_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -14611,7 +14611,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'GET' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/{transformation_template_id}' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/{transformation_template_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json'
@@ -14778,7 +14778,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PATCH' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/{transformation_template_id}' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/{transformation_template_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -14955,7 +14955,7 @@ paths:
         lang: Shell
         source: |-
           curl -X 'PUT' \
-            'https://api.eu.xwebhook.com/api/v1/transformation-template/{transformation_template_id}' \
+            'https://api.webhook.openweb3.io/api/v1/transformation-template/{transformation_template_id}' \
             -H 'Authorization: Bearer AUTH_TOKEN' \
             -H 'Accept: application/json' \
             -H 'Content-Type: application/json' \
@@ -15016,14 +15016,14 @@ components:
       type: object
     AppPortalAccessOut:
       example:
-        url: https://app.xwebhook.com/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
+        url: https://app.webhook.openweb3.io/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
         token: appsk_kV3ts5tKPNJN4Dl25cMTfUNdmabxbX0O
       properties:
         token:
           example: appsk_kV3ts5tKPNJN4Dl25cMTfUNdmabxbX0O
           type: string
         url:
-          example: https://app.xwebhook.com/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
+          example: https://app.webhook.openweb3.io/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
           format: uri
           maxLength: 65536
           minLength: 1
@@ -15457,14 +15457,14 @@ components:
       type: object
     DashboardAccessOut:
       example:
-        url: https://app.xwebhook.com/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
+        url: https://app.webhook.openweb3.io/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
         token: appsk_kV3ts5tKPNJN4Dl25cMTfUNdmabxbX0O
       properties:
         token:
           example: appsk_kV3ts5tKPNJN4Dl25cMTfUNdmabxbX0O
           type: string
         url:
-          example: https://app.xwebhook.com/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
+          example: https://app.webhook.openweb3.io/login#key=eyJhcHBJZCI6ICJhcHBfMXRSdFl
           format: uri
           maxLength: 65536
           minLength: 1

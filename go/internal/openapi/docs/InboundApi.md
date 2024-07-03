@@ -1,6 +1,6 @@
 # \InboundApi
 
-All URIs are relative to *https://api.eu.xwebhook.com*
+All URIs are relative to *https://api.webhook.openweb3.io*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

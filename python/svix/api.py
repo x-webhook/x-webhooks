@@ -175,7 +175,7 @@ from .internal.openapi_client.models.replay_in import ReplayIn
 from .internal.openapi_client.models.replay_out import ReplayOut
 from .internal.openapi_client.models.status_code_class import StatusCodeClass
 
-DEFAULT_SERVER_URL = "https://api.xwebhook.com"
+DEFAULT_SERVER_URL = "https://api.webhook.openweb3.io"
 
 
 @dataclass
@@ -1372,11 +1372,11 @@ class ClientBase:
         regional_url = None
         region = auth_token.split(".")[-1]
         if region == "us":
-            regional_url = "https://api.us.xwebhook.com"
+            regional_url = "https://api.webhook.openweb3.io"
         elif region == "eu":
-            regional_url = "https://api.eu.xwebhook.com"
+            regional_url = "https://api.webhook.openweb3.io"
         elif region == "in":
-            regional_url = "https://api.in.xwebhook.com"
+            regional_url = "https://api.webhook.openweb3.io"
 
         host = options.server_url or regional_url or DEFAULT_SERVER_URL
         client = AuthenticatedClient(

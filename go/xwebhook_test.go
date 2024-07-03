@@ -38,7 +38,7 @@ func setup() {
 		// },
 		ServerUrl: &url.URL{
 			Scheme: "https",
-			Host:   "api-webhook.mtsocialdao.com",
+			Host:   "api.webhook.openweb3.io",
 		},
 	}
 	xwh = xwebhook.New(token, opts)

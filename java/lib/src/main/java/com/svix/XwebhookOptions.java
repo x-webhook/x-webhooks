@@ -1,7 +1,7 @@
 package com.xwebhook;
 
 public final class XwebhookOptions {
-	private static final String DEFAULT_URL = "https://api.xwebhook.com";
+	private static final String DEFAULT_URL = "https://api.webhook.openweb3.io";
 
 	private boolean debug = false;
 	private String serverUrl = DEFAULT_URL;

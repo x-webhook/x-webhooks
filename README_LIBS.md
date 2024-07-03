@@ -1,11 +1,11 @@
 <h1 align="center">
-    <a style="text-decoration: none" href="https://www.xwebhook.com">
+    <a style="text-decoration: none" href="https://webhook.openweb3.io">
       <img width="120" src="https://avatars.githubusercontent.com/u/80175132?s=200&v=4" />
       <p align="center">Xwebhook - Webhooks as a service</p>
     </a>
 </h1>
 <h2 align="center">
-  <a href="https://xwebhook.com">Website</a> | <a href="https://docs.xwebhook.com">Documentation</a> | <a href="https://xwebhook.com/slack">Community Slack</a>
+  <a href="https://webhook.openweb3.io">Website</a> | <a href="https://docs.webhook.openweb3.io">Documentation</a> | <a href="https://webhook.openweb3.io/slack">Community Slack</a>
 <h2>
 
 ![GitHub tag](https://img.shields.io/github/tag/xwebhook/xwebhook-libs.svg)
@@ -17,9 +17,9 @@
 [![Nuget](https://img.shields.io/nuget/v/xwebhook)](https://www.nuget.org/packages/Xwebhook/)
 [![Packagist Version](https://img.shields.io/packagist/v/xwebhook/xwebhook)](https://packagist.org/packages/xwebhook/xwebhook)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/xwebhook/xwebhook-libs)](https://pkg.go.dev/github.com/xwebhook/xwebhook-libs/go)
-[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
+[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://webhook.openweb3.io/slack/)
 
-# [Xwebhook](https://xwebhook.com) Client Library Development Guide
+# [Xwebhook](https://webhook.openweb3.io) Client Library Development Guide
 
 Looking for general information? Checkout the [README](./README.md).
 
@@ -103,7 +103,7 @@ Looking for general information? Checkout the [README](./README.md).
 
 ## Usage Instructions
 
-For examples on how to get started using our client libraries checkout our [General Documentation](https://docs.xwebhook.com). For code examples checkout our [API Documentation]()
+For examples on how to get started using our client libraries checkout our [General Documentation](https://docs.webhook.openweb3.io). For code examples checkout our [API Documentation]()
 
 ## Building the Client Libraries
 

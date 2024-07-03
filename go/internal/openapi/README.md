@@ -74,7 +74,7 @@ ctx = context.WithValue(context.Background(), sw.ContextOperationServerVariables
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.eu.xwebhook.com*
+All URIs are relative to *https://api.webhook.openweb3.io*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

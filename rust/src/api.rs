@@ -49,10 +49,10 @@ impl Xwebhook {
 
         let base_path = options.server_url.unwrap_or_else(|| {
             match token.split('.').last() {
-                Some("us") => "https://api.us.xwebhook.com",
-                Some("eu") => "https://api.eu.xwebhook.com",
-                Some("in") => "https://api.in.xwebhook.com",
-                _ => "https://api.xwebhook.com",
+                Some("us") => "https://api.webhook.openweb3.io",
+                Some("eu") => "https://api.webhook.openweb3.io",
+                Some("in") => "https://api.webhook.openweb3.io",
+                _ => "https://api.webhook.openweb3.io",
             }
             .to_string()
         });

@@ -25,11 +25,11 @@ public final class Xwebhook {
 		String[] tokenParts = token.split("\\.");
 		String region = tokenParts[tokenParts.length - 1];
 		if (region.equals("us")) {
-			apiClient.setBasePath("https://api.us.xwebhook.com");
+			apiClient.setBasePath("https://api.webhook.openweb3.io");
 		} else if (region.equals("eu")) {
-			apiClient.setBasePath("https://api.eu.xwebhook.com");
+			apiClient.setBasePath("https://api.webhook.openweb3.io");
 		} else if (region.equals("in")) {
-			apiClient.setBasePath("https://api.in.xwebhook.com");
+			apiClient.setBasePath("https://api.webhook.openweb3.io");
 		} else {
 			apiClient.setBasePath(options.getServerUrl());
 		}

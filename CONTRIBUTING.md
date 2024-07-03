@@ -4,7 +4,7 @@ There are many ways to contribute to Xwebhook. You can contribute code, document
 
 Just create a new pull request if you want to make an update.
 
-If you want to speak to us before doing lots of work, just open a ticket or join our [slack community](https://www.xwebhook.com/slack) - we're very responsive and friendly!
+If you want to speak to us before doing lots of work, just open a ticket or join our [slack community](https://webhook.openweb3.io/slack) - we're very responsive and friendly!
 
 # Issues
 

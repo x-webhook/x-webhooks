@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://www.xwebhook.com">
+  <a href="https://webhook.openweb3.io">
     <img width="120" src="https://avatars.githubusercontent.com/u/80175132?s=200&v=4" />
     <p align="center">Xwebhook - Webhooks as a service</p>
   </a>
@@ -9,7 +9,7 @@
 [![Build Status](https://github.com/xwebhook/x-webhooks/workflows/Bridge%20CI/badge.svg)](https://github.com/xwebhook/x-webhooks/actions)
 [![Bridge Security](https://github.com/xwebhook/x-webhooks/actions/workflows/bridge-security.yml/badge.svg)](https://github.com/xwebhook/x-webhooks/actions/workflows/bridge-security.yml)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
+[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://webhook.openweb3.io/slack/)
 
 # Xwebhook Bridge (beta)
 
@@ -172,7 +172,7 @@ Senders should produce JSON following an expected shape:
 }
 ```
 
-For detail on the `message` field, see: <https://api.xwebhook.com/docs#tag/Message/operation/v1.message.create>
+For detail on the `message` field, see: <https://api.webhook.openweb3.io/docs#tag/Message/operation/v1.message.create>
 
 Receivers can accept arbitrary body data but the outputs require a JSON object with a `payload` field representing the
 message to publish.

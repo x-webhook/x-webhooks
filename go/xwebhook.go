@@ -38,17 +38,17 @@ var defaultHTTPClient = &http.Client{
 func New(token string, options *XwebhookOptions) *Xwebhook {
 	conf := openapi.NewConfiguration()
 	conf.Scheme = "https"
-	conf.Host = "api.xwebhook.com"
+	conf.Host = "api.webhook.openweb3.io"
 	conf.HTTPClient = defaultHTTPClient
 
 	var tokenParts = strings.Split(token, ".")
 	var region = tokenParts[len(tokenParts)-1]
 	if region == "us" {
-		conf.Host = "api.us.xwebhook.com"
+		conf.Host = "api.us.webhook.openweb3.io"
 	} else if region == "eu" {
-		conf.Host = "api.eu.xwebhook.com"
+		conf.Host = "api.eu.webhook.openweb3.io"
 	} else if region == "in" {
-		conf.Host = "api.in.xwebhook.com"
+		conf.Host = "api.in.webhook.openweb3.io"
 	}
 
 	if options != nil {

@@ -7,13 +7,13 @@ Gem::Specification.new do |spec|
   spec.name          = "xwebhook"
   spec.version       = Xwebhook::VERSION
   spec.authors       = ["Xwebhook"]
-  spec.email         = ["support@xwebhook.com"]
+  spec.email         = ["support@webhook.openweb3.io"]
   spec.license       = "MIT"
 
   spec.summary       = "Xwebhook webhooks API client and webhook verification library"
   spec.description   = "Xwebhook makes webhooks easy and reliable.  " \
-                       "Learn more at https://www.xwebhook.com"
-  spec.homepage      = "https://www.xwebhook.com"
+                       "Learn more at https://webhook.openweb3.io"
+  spec.homepage      = "https://webhook.openweb3.io"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

@@ -251,7 +251,7 @@ async fn main() -> Result<()> {
     tokio::spawn(
         async move {
             let mut interval = tokio::time::interval(Duration::from_secs(15));
-            let metrics = CommonMetrics::new(&opentelemetry::global::meter("xwebhook.com"));
+            let metrics = CommonMetrics::new(&opentelemetry::global::meter("webhook.openweb3.io"));
             match get_allocator_stat_mibs() {
                 Ok(mibs) => {
                     tracing::debug!("Common Metrics Collection: Started");

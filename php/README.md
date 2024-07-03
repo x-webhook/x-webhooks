@@ -1,11 +1,11 @@
 <h1 align="center">
-    <a style="text-decoration: none" href="https://www.xwebhook.com">
+    <a style="text-decoration: none" href="https://webhook.openweb3.io">
       <img width="120" src="https://avatars.githubusercontent.com/u/80175132?s=200&v=4" />
       <p align="center">Xwebhook - Webhooks as a service</p>
     </a>
 </h1>
 <h2 align="center">
-  <a href="https://xwebhook.com">Website</a> | <a href="https://docs.xwebhook.com">Documentation</a> | <a href="https://xwebhook.com/slack">Community Slack</a>
+  <a href="https://webhook.openweb3.io">Website</a> | <a href="https://docs.webhook.openweb3.io">Documentation</a> | <a href="https://webhook.openweb3.io/slack">Community Slack</a>
 <h2>
 
 PHP library for interacting with the Xwebhook API and verifying webhook signatures
@@ -13,11 +13,11 @@ PHP library for interacting with the Xwebhook API and verifying webhook signatur
 ![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![Packagist Version](https://img.shields.io/packagist/v/xwebhook/xwebhook)](https://packagist.org/packages/xwebhook/xwebhook)
 
-[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
+[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://webhook.openweb3.io/slack/)
 
 # Usage Documentation
 
-You can find general usage documentation at <https://docs.xwebhook.com>.  For complete API documentation with code examples for each endpoint in all of our official client libraries head over to our API documentation site at <https://api.xwebhook.com>.
+You can find general usage documentation at <https://docs.webhook.openweb3.io>.  For complete API documentation with code examples for each endpoint in all of our official client libraries head over to our API documentation site at <https://api.webhook.openweb3.io>.
 
 # Language Support
 

@@ -24,13 +24,13 @@ module Xwebhook
 
             region = auth_token.split(".").last
             if region == "us"
-                regional_url = "https://api.us.xwebhook.com"
+                regional_url = "https://api.webhook.openweb3.io"
             elsif region == "eu"
-                regional_url = "https://api.eu.xwebhook.com"
+                regional_url = "https://api.webhook.openweb3.io"
             elsif region == "in"
-                regional_url = "https://api.in.xwebhook.com"
+                regional_url = "https://api.webhook.openweb3.io"
             else
-                regional_url = "https://api.xwebhook.com"
+                regional_url = "https://api.webhook.openweb3.io"
             end
 
             uri = URI(options.server_url || regional_url)

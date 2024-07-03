@@ -5,7 +5,7 @@ const Converter = require('openapi-to-postmanv2');
 const POSTMAN_COLLECTION_ID = '15964941-fdc9fd1f-d7bc-4f7e-b5ce-9189dbcbb81d';
 const POSTMAN_API_KEY = process.env.POSTMAN_API_KEY;
 
-const openapiUrl = 'https://api.xwebhook.com/api/v1/openapi.json';
+const openapiUrl = 'https://api.webhook.openweb3.io/api/v1/openapi.json';
 
 const conversionOptions = {
     'folderStrategy': 'tags'

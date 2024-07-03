@@ -3,13 +3,13 @@
     "type": "library",
     "description": "Xwebhook PHP Library",
     "keywords": ["webhooks","api"],
-    "homepage": "https://www.xwebhook.com",
+    "homepage": "https://webhook.openweb3.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Xwebhook",
-            "email": "support@xwebhook.com",
-            "homepage": "http://www.xwebhook.com"
+            "email": "support@webhook.openweb3.io",
+            "homepage": "http://webhook.openweb3.io"
         }
     ],
     "require": {

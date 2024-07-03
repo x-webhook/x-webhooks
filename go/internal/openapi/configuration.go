@@ -105,11 +105,11 @@ func NewConfiguration() *Configuration {
 		Debug:            false,
 		Servers:          ServerConfigurations{
 			{
-				URL: "https://api.eu.xwebhook.com",
+				URL: "https://api.webhook.openweb3.io",
 				Description: "The Xwebhook EU region",
 			},
 			{
-				URL: "https://api.us.xwebhook.com",
+				URL: "https://api.webhook.openweb3.io",
 				Description: "The Xwebhook US region",
 			},
 		},

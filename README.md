@@ -1,18 +1,18 @@
 <h1 align="center">
-    <a style="text-decoration: none" href="https://www.xwebhook.com">
+    <a style="text-decoration: none" href="https://webhook.openweb3.io">
       <img width="120" src="https://avatars.githubusercontent.com/u/80175132?s=200&v=4" />
       <p align="center">Xwebhook - Webhooks as a service</p>
     </a>
 </h1>
 <h2 align="center">
-  <a href="https://xwebhook.com">Website</a> | <a href="https://docs.xwebhook.com">Documentation</a> | <a href="https://xwebhook.com/slack">Community Slack</a>
+  <a href="https://webhook.openweb3.io">Website</a> | <a href="https://docs.webhook.openweb3.io">Documentation</a> | <a href="https://webhook.openweb3.io/slack">Community Slack</a>
 <h2>
 
 ![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
 [![Build Status](https://github.com/x-webhook/x-webhooks/workflows/Server%20CI/badge.svg)](https://github.com/x-webhook/x-webhooks/actions)
 [![Server Security](https://github.com/x-webhook/x-webhooks/actions/workflows/server-security.yml/badge.svg)](https://github.com/x-webhook/x-webhooks/actions/workflows/server-security.yml)
 [![Twitter Follow](https://img.shields.io/twitter/follow/XwebhookHQ?style=social)](https://twitter.com/XwebhookHQ)
-[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://www.xwebhook.com/slack/)
+[![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://webhook.openweb3.io/slack/)
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/xwebhook/xwebhook-server?logo=docker)](https://hub.docker.com/r/x-webhook/xwebhook-server/)
 [![NPM Downloads](https://img.shields.io/npm/dt/xwebhook?logo=npm)](https://www.npmjs.com/package/xwebhook)
@@ -20,7 +20,7 @@
 
 ## Xwebhook is the enterprise ready webhook service
 
-Xwebhook makes it easy for developers to send webhooks. Developers make one API call, and Xwebhook takes care of deliverability, retries, security, and more. For more information, please refer to the [Xwebhook homepage](https://www.xwebhook.com).
+Xwebhook makes it easy for developers to send webhooks. Developers make one API call, and Xwebhook takes care of deliverability, retries, security, and more. For more information, please refer to the [Xwebhook homepage](https://webhook.openweb3.io).
 
 
 [![PyPI](https://img.shields.io/pypi/v/xwebhook.svg)](https://pypi.python.org/pypi/xwebhook/)
@@ -35,13 +35,13 @@ Xwebhook makes it easy for developers to send webhooks. Developers make one API 
 
 # Documentation
 
-You can find general usage documentation at <https://docs.xwebhook.com>. For complete API documentation with code examples for each endpoint in all of our official client libraries head over to our API documentation site at <https://api.xwebhook.com>.
+You can find general usage documentation at <https://docs.webhook.openweb3.io>. For complete API documentation with code examples for each endpoint in all of our official client libraries head over to our API documentation site at <https://api.webhook.openweb3.io>.
 
 # Support & Community
 
   - [GitHub Issues](https://github.com/x-webhook/x-webhooks/issues) - report issues and make suggestions.
   - [Community Forum](https://github.com/x-webhook/x-webhooks/discussions) - ask questions, and start discussions!
-  - [Slack](https://www.xwebhook.com/slack/) - come and chat with us!
+  - [Slack](https://webhook.openweb3.io/slack/) - come and chat with us!
 
 To stay up-to-date with new features and improvements be sure to watch our repo!
 
@@ -259,7 +259,7 @@ Xwebhook supports two types of signature schemes: symmetric (pre-shared key) and
 
 Symmetric signatures are significantly faster (~50x for signing, and ~160x for verifying), and are much simpler (which makes verification easier for your customers), though they require the usage of a pre-shared key per endpoint (endpoint secret) in order to work. Asymmetric signatures on the other hand only require sharing a public key with your customers (not secret).
 
-Because of the above, using symmetric keys is both recommended and the Xwebhook default. Using them is documented in the [verifying signatures section of the docs](https://docs.xwebhook.com/receiving/verifying-payloads/how-manual).
+Because of the above, using symmetric keys is both recommended and the Xwebhook default. Using them is documented in the [verifying signatures section of the docs](https://docs.webhook.openweb3.io/receiving/verifying-payloads/how-manual).
 
 However, in some scenarios it may be beneficial to use asymmetric signatures, which is why they too are supported. For more information please refer to the [asymmetric signatures section](#asymmetric-signatures) below.
 
@@ -299,7 +299,7 @@ As mentioned above, the default algorithm for signing JWTs is `HS256`. You can s
 
 ## Operational (incoming) webhooks
 
-Operational webhooks are webhooks that you can subscribe to in order to get notified of important events occurring on the xwebhook-server. The list of supported events is available in [the webhooks section of the API reference](https://api.xwebhook.com/docs#tag/Webhooks).
+Operational webhooks are webhooks that you can subscribe to in order to get notified of important events occurring on the xwebhook-server. The list of supported events is available in [the webhooks section of the API reference](https://api.webhook.openweb3.io/docs#tag/Webhooks).
 
 The operational webhooks utilize Xwebhook, and are controlled by a special account service account with the following ID: `org_00000000000XwebhookManagement00`.
 
@@ -331,7 +331,7 @@ This is it, we now have operational webhooks enabled for the default account. Th
 
 ```
 curl -X 'POST' \
-  'https://api.eu.xwebhook.com/api/v1/app/org_23rb8YdGqMT0qIzpgGwdXfHirMu/endpoint/' \
+  'https://api.webhook.openweb3.io/api/v1/app/org_23rb8YdGqMT0qIzpgGwdXfHirMu/endpoint/' \
   -H 'Authorization: Bearer AUTH_TOKEN' \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -378,7 +378,7 @@ Public key: whpk_1SiA4o9hyqTCpIqC5V9HUakiiaeACeqfZTInDBbOir4=
 
 Xwebhook uses `ed25519(m)` for signing the webhook messages, and it constructs `m` the same way as it does for the symmetric signatures.
 
-When verifying the message you should also ensure that the timestamp is recent enough in order to limit the potential of replay attacks as noted in [the symmetric verification docs](https://docs.xwebhook.com/receiving/verifying-payloads/why).
+When verifying the message you should also ensure that the timestamp is recent enough in order to limit the potential of replay attacks as noted in [the symmetric verification docs](https://docs.webhook.openweb3.io/receiving/verifying-payloads/why).
 
 ## Shutting down the server
 
@@ -422,17 +422,17 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 Here is a list of guides for sending webhooks with Xwebhook:
 
-* [Send Webhooks with Python](https://www.xwebhook.com/guides/sending/send-webhooks-with-python/) (also w/ [Django](https://www.xwebhook.com/guides/sending/send-webhooks-with-python-django/) & [Flask](https://www.xwebhook.com/guides/sending/send-webhooks-with-python-flask/))
-* [Send Webhooks with JavaScript](https://www.xwebhook.com/guides/sending/send-webhooks-with-javascript/) (also w/ [NodeJS](https://www.xwebhook.com/guides/sending/send-webhooks-with-javascript-nodejs/) & [Express](https://www.xwebhook.com/guides/sending/send-webhooks-with-javascript-express/))
-* [Send Webhooks with TypeScript](https://www.xwebhook.com/guides/sending/send-webhooks-with-typescript/)
-* [Send Webhooks with Go](https://www.xwebhook.com/guides/sending/send-webhooks-with-go/)
-* [Send Webhooks with Java](https://www.xwebhook.com/guides/sending/send-webhooks-with-java/) (also w/ [Spring](https://www.xwebhook.com/guides/sending/send-webhooks-with-java-spring/))
-* [Send Webhooks with Kotlin](https://www.xwebhook.com/guides/sending/send-webhooks-with-kotlin/)
-* [Send Webhooks with Rust](https://www.xwebhook.com/guides/sending/send-webhooks-with-rust/)
-* [Send Webhooks with C#](https://www.xwebhook.com/guides/sending/send-webhooks-with-c-sharp/) (also w/ [ASP.NET](https://www.xwebhook.com/guides/sending/send-webhooks-with-c-aspnet-sharp/))
-* [Send Webhooks with PHP](https://www.xwebhook.com/guides/sending/send-webhooks-with-php/) (also w/ [Laravel](https://www.xwebhook.com/guides/sending/send-webhooks-with-php-laravel/))
-* [Send Webhooks with Ruby](https://www.xwebhook.com/guides/sending/send-webhooks-with-ruby/)
-* [Send Webhooks with Xwebhook CLI](https://www.xwebhook.com/guides/sending/send-webhooks-with-xwebhook-cli/)
+* [Send Webhooks with Python](https://webhook.openweb3.io/guides/sending/send-webhooks-with-python/) (also w/ [Django](https://webhook.openweb3.io/guides/sending/send-webhooks-with-python-django/) & [Flask](https://webhook.openweb3.io/guides/sending/send-webhooks-with-python-flask/))
+* [Send Webhooks with JavaScript](https://webhook.openweb3.io/guides/sending/send-webhooks-with-javascript/) (also w/ [NodeJS](https://webhook.openweb3.io/guides/sending/send-webhooks-with-javascript-nodejs/) & [Express](https://webhook.openweb3.io/guides/sending/send-webhooks-with-javascript-express/))
+* [Send Webhooks with TypeScript](https://webhook.openweb3.io/guides/sending/send-webhooks-with-typescript/)
+* [Send Webhooks with Go](https://webhook.openweb3.io/guides/sending/send-webhooks-with-go/)
+* [Send Webhooks with Java](https://webhook.openweb3.io/guides/sending/send-webhooks-with-java/) (also w/ [Spring](https://webhook.openweb3.io/guides/sending/send-webhooks-with-java-spring/))
+* [Send Webhooks with Kotlin](https://webhook.openweb3.io/guides/sending/send-webhooks-with-kotlin/)
+* [Send Webhooks with Rust](https://webhook.openweb3.io/guides/sending/send-webhooks-with-rust/)
+* [Send Webhooks with C#](https://webhook.openweb3.io/guides/sending/send-webhooks-with-c-sharp/) (also w/ [ASP.NET](https://webhook.openweb3.io/guides/sending/send-webhooks-with-c-aspnet-sharp/))
+* [Send Webhooks with PHP](https://webhook.openweb3.io/guides/sending/send-webhooks-with-php/) (also w/ [Laravel](https://webhook.openweb3.io/guides/sending/send-webhooks-with-php-laravel/))
+* [Send Webhooks with Ruby](https://webhook.openweb3.io/guides/sending/send-webhooks-with-ruby/)
+* [Send Webhooks with Xwebhook CLI](https://webhook.openweb3.io/guides/sending/send-webhooks-with-xwebhook-cli/)
 
 # Backed By
 

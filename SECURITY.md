@@ -6,6 +6,6 @@ We always recommend using the latest version of Xwebhook to ensure you get all s
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities to security@xwebhook.com.
+Please report security vulnerabilities to security@webhook.openweb3.io.
 
 We currently do not operate a bug bounty program, but we will reward you with merch and attribution for any actionable security vulnerabilities found.

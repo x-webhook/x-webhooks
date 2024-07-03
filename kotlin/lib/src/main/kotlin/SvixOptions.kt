@@ -14,7 +14,7 @@ data class XwebhookOptions(
         }
 
     companion object {
-        const val DEFAULT_URL = "https://api.xwebhook.com"
+        const val DEFAULT_URL = "https://api.webhook.openweb3.io"
     }
 
     internal fun getUA(): String {

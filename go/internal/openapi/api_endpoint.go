@@ -1168,7 +1168,7 @@ func (r ApiV1EndpointGetSecretRequest) Execute() (EndpointSecretOut, *_nethttp.R
  * Get the endpoint's signing secret.
 
 This is used to verify the authenticity of the webhook.
-For more information please refer to [the consuming webhooks docs](https://docs.xwebhook.com/consuming-webhooks/).
+For more information please refer to [the consuming webhooks docs](https://docs.webhook.openweb3.io/consuming-webhooks/).
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param appId The app's ID or UID
  * @param endpointId The ep's ID or UID
