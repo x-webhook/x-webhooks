@@ -1273,6 +1273,21 @@
                         },
                         "type": "object"
                     },
+                    "payloadRules": {
+                        "additionalProperties": {
+                            "type": "object"
+                        },
+                        "description": "The filter rules for the message payload.",
+                        "example": {
+                            "type": "tx.created",
+                            "chain": "ton",
+                            "amount": {
+                                "$gt": "400"
+                            }
+                        },
+                        "nullable": true,
+                        "type": "object"
+                    },
                     "rateLimit": {
                         "format": "uint16",
                         "minimum": 0,
