@@ -1,7 +1,7 @@
 [package]
 name = "xwebhook"
 version = "1.24.0"
-authors = ["Xwebhook Inc. <oss@webhook.openweb3.io>"]
+authors = ["Xwebhook Inc. <dev@webhook.openweb3.io>"]
 edition = "2021"
 description = "Xwebhook webhooks API client and webhook verification library"
 homepage = "https://webhook.openweb3.io"
