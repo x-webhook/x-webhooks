@@ -1,6 +1,6 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.models.Ordering
+import io.openweb3.xwebhook.kotlin.models.Ordering
 
 class EndpointListOptions : ListOptions() {
     var order: Ordering? = null

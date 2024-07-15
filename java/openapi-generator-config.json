@@ -1,5 +1,5 @@
 {
-  "apiPackage": "com.xwebhook.internal.api",
-  "modelPackage": "com.xwebhook.models",
+  "apiPackage": "io.openweb3.xwebhook.internal.api",
+  "modelPackage": "io.openweb3.xwebhook.models",
   "dateLibrary": "java8"
 }

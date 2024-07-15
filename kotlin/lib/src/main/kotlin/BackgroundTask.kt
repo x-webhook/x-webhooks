@@ -1,9 +1,9 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.BackgroundTasksApi
-import com.xwebhook.kotlin.models.BackgroundTaskOut
-import com.xwebhook.kotlin.models.ListResponseBackgroundTaskOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.BackgroundTasksApi
+import io.openweb3.xwebhook.kotlin.models.BackgroundTaskOut
+import io.openweb3.xwebhook.kotlin.models.ListResponseBackgroundTaskOut
 
 class BackgroundTask internal constructor(token: String, options: XwebhookOptions) {
     private val api = BackgroundTasksApi(options.serverUrl)

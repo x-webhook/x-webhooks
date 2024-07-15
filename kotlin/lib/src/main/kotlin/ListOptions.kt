@@ -1,4 +1,4 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
 open class ListOptions {
     var iterator: String? = null

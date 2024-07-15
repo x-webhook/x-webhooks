@@ -1,8 +1,8 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.models.BackgroundTaskStatus
-import com.xwebhook.kotlin.models.BackgroundTaskType
-import com.xwebhook.kotlin.models.Ordering
+import io.openweb3.xwebhook.kotlin.models.BackgroundTaskStatus
+import io.openweb3.xwebhook.kotlin.models.BackgroundTaskType
+import io.openweb3.xwebhook.kotlin.models.Ordering
 
 class BackgroundTaskListOptions : ListOptions() {
     var status: BackgroundTaskStatus? = null

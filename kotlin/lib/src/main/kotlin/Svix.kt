@@ -1,4 +1,4 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
 class Xwebhook(token: String, options: XwebhookOptions = XwebhookOptions()) {
     init {

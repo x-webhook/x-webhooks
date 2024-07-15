@@ -1,4 +1,4 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
 data class XwebhookOptions(
     internal var wantedServerUrl: String? = null,

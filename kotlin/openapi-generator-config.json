@@ -1,5 +1,5 @@
 {
-  "packageName": "com.xwebhook.kotlin.internal",
-  "modelPackage": "com.xwebhook.kotlin.models",
+  "packageName": "io.openweb3.xwebhook.kotlin.internal",
+  "modelPackage": "io.openweb3.xwebhook.kotlin.models",
   "useCoroutines": true
 }

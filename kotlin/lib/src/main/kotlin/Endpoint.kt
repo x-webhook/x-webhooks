@@ -1,23 +1,23 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.EndpointApi
-import com.xwebhook.kotlin.models.EndpointHeadersIn
-import com.xwebhook.kotlin.models.EndpointHeadersOut
-import com.xwebhook.kotlin.models.EndpointHeadersPatchIn
-import com.xwebhook.kotlin.models.EndpointIn
-import com.xwebhook.kotlin.models.EndpointOut
-import com.xwebhook.kotlin.models.EndpointPatch
-import com.xwebhook.kotlin.models.EndpointSecretOut
-import com.xwebhook.kotlin.models.EndpointSecretRotateIn
-import com.xwebhook.kotlin.models.EndpointStats
-import com.xwebhook.kotlin.models.EndpointTransformationIn
-import com.xwebhook.kotlin.models.EndpointTransformationOut
-import com.xwebhook.kotlin.models.EndpointUpdate
-import com.xwebhook.kotlin.models.EventExampleIn
-import com.xwebhook.kotlin.models.ListResponseEndpointOut
-import com.xwebhook.kotlin.models.RecoverIn
-import com.xwebhook.kotlin.models.ReplayIn
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.EndpointApi
+import io.openweb3.xwebhook.kotlin.models.EndpointHeadersIn
+import io.openweb3.xwebhook.kotlin.models.EndpointHeadersOut
+import io.openweb3.xwebhook.kotlin.models.EndpointHeadersPatchIn
+import io.openweb3.xwebhook.kotlin.models.EndpointIn
+import io.openweb3.xwebhook.kotlin.models.EndpointOut
+import io.openweb3.xwebhook.kotlin.models.EndpointPatch
+import io.openweb3.xwebhook.kotlin.models.EndpointSecretOut
+import io.openweb3.xwebhook.kotlin.models.EndpointSecretRotateIn
+import io.openweb3.xwebhook.kotlin.models.EndpointStats
+import io.openweb3.xwebhook.kotlin.models.EndpointTransformationIn
+import io.openweb3.xwebhook.kotlin.models.EndpointTransformationOut
+import io.openweb3.xwebhook.kotlin.models.EndpointUpdate
+import io.openweb3.xwebhook.kotlin.models.EventExampleIn
+import io.openweb3.xwebhook.kotlin.models.ListResponseEndpointOut
+import io.openweb3.xwebhook.kotlin.models.RecoverIn
+import io.openweb3.xwebhook.kotlin.models.ReplayIn
 
 class Endpoint internal constructor(token: String, options: XwebhookOptions) {
     val api = EndpointApi(options.serverUrl)

@@ -1,6 +1,6 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.WebhookVerificationException
+import io.openweb3.xwebhook.kotlin.exceptions.WebhookVerificationException
 import java.net.http.HttpHeaders
 import java.nio.charset.StandardCharsets
 import java.util.Base64

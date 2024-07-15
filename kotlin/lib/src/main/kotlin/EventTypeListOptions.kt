@@ -1,4 +1,4 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
 class EventTypeListOptions() : ListOptions() {
     var withContent: Boolean? = null

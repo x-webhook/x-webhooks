@@ -1,10 +1,10 @@
-package com.xwebhook;
+package io.openweb3.xwebhook;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
-import com.xwebhook.exceptions.WebhookVerificationException;
-import com.xwebhook.exceptions.WebhookSigningException;
+import io.openweb3.xwebhook.exceptions.WebhookVerificationException;
+import io.openweb3.xwebhook.exceptions.WebhookSigningException;
 
 import java.net.http.HttpHeaders;
 import java.nio.charset.StandardCharsets;

@@ -1,10 +1,10 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.AuthenticationApi
-import com.xwebhook.kotlin.models.AppPortalAccessIn
-import com.xwebhook.kotlin.models.AppPortalAccessOut
-import com.xwebhook.kotlin.models.DashboardAccessOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.AuthenticationApi
+import io.openweb3.xwebhook.kotlin.models.AppPortalAccessIn
+import io.openweb3.xwebhook.kotlin.models.AppPortalAccessOut
+import io.openweb3.xwebhook.kotlin.models.DashboardAccessOut
 
 class Authentication internal constructor(token: String, options: XwebhookOptions) {
     val api = AuthenticationApi(options.serverUrl)

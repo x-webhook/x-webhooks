@@ -1,12 +1,12 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.MessageAttemptApi
-import com.xwebhook.kotlin.models.ListResponseEndpointMessageOut
-import com.xwebhook.kotlin.models.ListResponseMessageAttemptEndpointOut
-import com.xwebhook.kotlin.models.ListResponseMessageAttemptOut
-import com.xwebhook.kotlin.models.ListResponseMessageEndpointOut
-import com.xwebhook.kotlin.models.MessageAttemptOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.MessageAttemptApi
+import io.openweb3.xwebhook.kotlin.models.ListResponseEndpointMessageOut
+import io.openweb3.xwebhook.kotlin.models.ListResponseMessageAttemptEndpointOut
+import io.openweb3.xwebhook.kotlin.models.ListResponseMessageAttemptOut
+import io.openweb3.xwebhook.kotlin.models.ListResponseMessageEndpointOut
+import io.openweb3.xwebhook.kotlin.models.MessageAttemptOut
 
 class MessageAttempt internal constructor(token: String, options: XwebhookOptions) {
     val api = MessageAttemptApi(options.serverUrl)

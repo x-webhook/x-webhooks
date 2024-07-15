@@ -1,10 +1,10 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.StatisticsApi
-import com.xwebhook.kotlin.models.AggregateEventTypesOut
-import com.xwebhook.kotlin.models.AppUsageStatsIn
-import com.xwebhook.kotlin.models.AppUsageStatsOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.StatisticsApi
+import io.openweb3.xwebhook.kotlin.models.AggregateEventTypesOut
+import io.openweb3.xwebhook.kotlin.models.AppUsageStatsIn
+import io.openweb3.xwebhook.kotlin.models.AppUsageStatsOut
 
 class Statistics internal constructor(token: String, options: XwebhookOptions) {
     private val api = StatisticsApi(options.serverUrl)

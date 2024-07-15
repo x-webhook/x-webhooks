@@ -1,14 +1,14 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.EventTypeApi
-import com.xwebhook.kotlin.models.EventTypeImportOpenApiIn
-import com.xwebhook.kotlin.models.EventTypeImportOpenApiOut
-import com.xwebhook.kotlin.models.EventTypeIn
-import com.xwebhook.kotlin.models.EventTypeOut
-import com.xwebhook.kotlin.models.EventTypePatch
-import com.xwebhook.kotlin.models.EventTypeUpdate
-import com.xwebhook.kotlin.models.ListResponseEventTypeOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.EventTypeApi
+import io.openweb3.xwebhook.kotlin.models.EventTypeImportOpenApiIn
+import io.openweb3.xwebhook.kotlin.models.EventTypeImportOpenApiOut
+import io.openweb3.xwebhook.kotlin.models.EventTypeIn
+import io.openweb3.xwebhook.kotlin.models.EventTypeOut
+import io.openweb3.xwebhook.kotlin.models.EventTypePatch
+import io.openweb3.xwebhook.kotlin.models.EventTypeUpdate
+import io.openweb3.xwebhook.kotlin.models.ListResponseEventTypeOut
 
 class EventType internal constructor(token: String, options: XwebhookOptions) {
     val api = EventTypeApi(options.serverUrl)

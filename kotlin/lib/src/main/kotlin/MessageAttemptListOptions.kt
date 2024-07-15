@@ -1,7 +1,7 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.models.MessageStatus
-import com.xwebhook.kotlin.models.StatusCodeClass
+import io.openweb3.xwebhook.kotlin.models.MessageStatus
+import io.openweb3.xwebhook.kotlin.models.StatusCodeClass
 import java.time.OffsetDateTime
 
 class MessageAttemptListOptions(

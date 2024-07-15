@@ -1,10 +1,10 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.MessageApi
-import com.xwebhook.kotlin.models.ListResponseMessageOut
-import com.xwebhook.kotlin.models.MessageIn
-import com.xwebhook.kotlin.models.MessageOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.MessageApi
+import io.openweb3.xwebhook.kotlin.models.ListResponseMessageOut
+import io.openweb3.xwebhook.kotlin.models.MessageIn
+import io.openweb3.xwebhook.kotlin.models.MessageOut
 
 class Message internal constructor(token: String, options: XwebhookOptions) {
     val api = MessageApi(options.serverUrl)

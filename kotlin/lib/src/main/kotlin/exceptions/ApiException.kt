@@ -1,10 +1,10 @@
-package com.xwebhook.kotlin.exceptions
+package io.openweb3.xwebhook.kotlin.exceptions
 
-import com.xwebhook.kotlin.internal.infrastructure.ClientError
-import com.xwebhook.kotlin.internal.infrastructure.ClientException
-import com.xwebhook.kotlin.internal.infrastructure.Response
-import com.xwebhook.kotlin.internal.infrastructure.ServerError
-import com.xwebhook.kotlin.internal.infrastructure.ServerException
+import io.openweb3.xwebhook.kotlin.internal.infrastructure.ClientError
+import io.openweb3.xwebhook.kotlin.internal.infrastructure.ClientException
+import io.openweb3.xwebhook.kotlin.internal.infrastructure.Response
+import io.openweb3.xwebhook.kotlin.internal.infrastructure.ServerError
+import io.openweb3.xwebhook.kotlin.internal.infrastructure.ServerException
 
 class ApiException internal constructor(message: String? = null, val statusCode: Int = -1, val body: String? = null) : RuntimeException(
     message,

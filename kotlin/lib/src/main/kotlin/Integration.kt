@@ -1,12 +1,12 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.exceptions.ApiException
-import com.xwebhook.kotlin.internal.apis.IntegrationApi
-import com.xwebhook.kotlin.models.IntegrationIn
-import com.xwebhook.kotlin.models.IntegrationKeyOut
-import com.xwebhook.kotlin.models.IntegrationOut
-import com.xwebhook.kotlin.models.IntegrationUpdate
-import com.xwebhook.kotlin.models.ListResponseIntegrationOut
+import io.openweb3.xwebhook.kotlin.exceptions.ApiException
+import io.openweb3.xwebhook.kotlin.internal.apis.IntegrationApi
+import io.openweb3.xwebhook.kotlin.models.IntegrationIn
+import io.openweb3.xwebhook.kotlin.models.IntegrationKeyOut
+import io.openweb3.xwebhook.kotlin.models.IntegrationOut
+import io.openweb3.xwebhook.kotlin.models.IntegrationUpdate
+import io.openweb3.xwebhook.kotlin.models.ListResponseIntegrationOut
 
 class Integration internal constructor(token: String, options: XwebhookOptions) {
     val api = IntegrationApi(options.serverUrl)

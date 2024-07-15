@@ -11,7 +11,7 @@
 Java library for interacting with the Xwebhook API and verifying webhook signatures
 
 ![GitHub tag](https://img.shields.io/github/tag/x-webhook/x-webhooks.svg)
-[![Maven Central (Java)](https://img.shields.io/maven-central/v/com.xwebhook/xwebhook?label=maven-central%20(java))](https://search.maven.org/artifact/com.xwebhook/xwebhook)
+[![Maven Central (Java)](https://img.shields.io/maven-central/v/io.openweb3.xwebhook/xwebhook?label=maven-central%20(java))](https://search.maven.org/artifact/io.openweb3.xwebhook/xwebhook)
 
 [![Join our slack](https://img.shields.io/badge/Slack-join%20the%20community-blue?logo=slack&style=social)](https://webhook.openweb3.io/slack/)
 
@@ -49,7 +49,7 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>com.xwebhook</groupId>
+  <groupId>io.openweb3.xwebhook</groupId>
   <artifactId>xwebhook</artifactId>
   <version>1.24.0</version>
   <scope>compile</scope>
@@ -61,7 +61,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-implementation "com.xwebhook:xwebhook:1.24.0"
+implementation "io.openweb3.xwebhook:xwebhook:1.24.0"
 ```
 
 # Development

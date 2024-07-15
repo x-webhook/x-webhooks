@@ -1,7 +1,7 @@
-package com.xwebhook.kotlin
+package io.openweb3.xwebhook.kotlin
 
-import com.xwebhook.kotlin.models.ApplicationIn
-import com.xwebhook.kotlin.models.MessageIn
+import io.openweb3.xwebhook.kotlin.models.ApplicationIn
+import io.openweb3.xwebhook.kotlin.models.MessageIn
 import kotlinx.coroutines.runBlocking
 import kotlin.test.Test
 import kotlin.test.assertEquals
