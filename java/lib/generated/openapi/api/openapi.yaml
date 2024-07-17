@@ -15822,7 +15822,6 @@ components:
       properties:
         headers:
           additionalProperties:
-            nullable: true
             type: string
           example:
             X-Example: "123"
@@ -15902,7 +15901,6 @@ components:
           type: object
         headers:
           additionalProperties:
-            nullable: true
             type: string
           example:
             X-Example: "123"
@@ -16122,7 +16120,8 @@ components:
           X-Example: "123"
           X-Foobar: Bar
         metadata:
-          key: metadata
+          X-Example: "123"
+          X-Foobar: Bar
         rateLimit: 0
         description: description
         version: 1
@@ -16191,10 +16190,12 @@ components:
         metadata:
           additionalProperties:
             type: string
+          example:
+            X-Example: "123"
+            X-Foobar: Bar
           type: object
         headers:
           additionalProperties:
-            nullable: true
             type: string
           example:
             X-Example: "123"
@@ -16255,7 +16256,8 @@ components:
           X-Foobar: Bar
         uid: unique-ep-identifier
         metadata:
-          key: metadata
+          X-Example: "123"
+          X-Foobar: Bar
         rateLimit: 0
         channels:
         - project_1337
@@ -16300,10 +16302,12 @@ components:
         metadata:
           additionalProperties:
             type: string
+          example:
+            X-Example: "123"
+            X-Foobar: Bar
           type: object
         headers:
           additionalProperties:
-            nullable: true
             type: string
           example:
             X-Example: "123"
@@ -17815,7 +17819,8 @@ components:
             X-Example: "123"
             X-Foobar: Bar
           metadata:
-            key: metadata
+            X-Example: "123"
+            X-Foobar: Bar
           rateLimit: 0
           description: description
           version: 1
@@ -17840,7 +17845,8 @@ components:
             X-Example: "123"
             X-Foobar: Bar
           metadata:
-            key: metadata
+            X-Example: "123"
+            X-Foobar: Bar
           rateLimit: 0
           description: description
           version: 1
@@ -18910,7 +18916,6 @@ components:
           type: integer
         headers:
           additionalProperties:
-            nullable: true
             type: string
           example:
             X-Example: "123"

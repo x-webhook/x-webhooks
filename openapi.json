@@ -796,7 +796,6 @@
                 "properties": {
                     "headers": {
                         "additionalProperties": {
-                            "nullable": true,
                             "type": "string"
                         },
                         "example": {
@@ -867,7 +866,6 @@
                     },                    
                     "headers": {
                         "additionalProperties": {
-                            "nullable": true,
                             "type": "string"
                         },
                         "example": {
@@ -1152,11 +1150,14 @@
                         "additionalProperties": {
                             "type": "string"
                         },
+                        "example": {
+                            "X-Example": "123",
+                            "X-Foobar": "Bar"
+                        },
                         "type": "object"
                     },                    
                     "headers": {
                         "additionalProperties": {
-                            "nullable": true,
                             "type": "string"
                         },
                         "example": {
@@ -1260,11 +1261,14 @@
                         "additionalProperties": {
                             "type": "string"
                         },
+                        "example": {
+                            "X-Example": "123",
+                            "X-Foobar": "Bar"
+                        },
                         "type": "object"
                     },                    
                     "headers": {
                         "additionalProperties": {
-                            "nullable": true,
                             "type": "string"
                         },
                         "example": {
@@ -3412,7 +3416,6 @@
                     },                    
                     "headers": {
                         "additionalProperties": {
-                            "nullable": true,
                             "type": "string"
                         },
                         "example": {

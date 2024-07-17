@@ -29,7 +29,7 @@ import java.io.IOException;
  * Sent when an endpoint has been automatically disabled after continuous failures.
  */
 @ApiModel(description = "Sent when an endpoint has been automatically disabled after continuous failures.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-15T21:50:31.553143+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
 public class EndpointDisabledEvent {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)

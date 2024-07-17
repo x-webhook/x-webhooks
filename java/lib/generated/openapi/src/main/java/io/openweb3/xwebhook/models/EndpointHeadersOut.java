@@ -33,7 +33,7 @@ import java.util.Set;
  * The value of the headers is returned in the &#x60;headers&#x60; field.  Sensitive headers that have been redacted are returned in the sensitive field.
  */
 @ApiModel(description = "The value of the headers is returned in the `headers` field.  Sensitive headers that have been redacted are returned in the sensitive field.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-15T21:50:31.553143+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
 public class EndpointHeadersOut {
   public static final String SERIALIZED_NAME_HEADERS = "headers";
   @SerializedName(SERIALIZED_NAME_HEADERS)

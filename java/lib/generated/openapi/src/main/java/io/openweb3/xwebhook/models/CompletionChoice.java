@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * CompletionChoice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-15T21:50:31.553143+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
 public class CompletionChoice {
   public static final String SERIALIZED_NAME_FINISH_REASON = "finish_reason";
   @SerializedName(SERIALIZED_NAME_FINISH_REASON)

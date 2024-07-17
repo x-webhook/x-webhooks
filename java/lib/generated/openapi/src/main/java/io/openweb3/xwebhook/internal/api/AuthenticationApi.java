@@ -69,9 +69,9 @@ public class AuthenticationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -145,9 +145,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return AppPortalAccessOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -172,9 +172,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;AppPortalAccessOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -201,9 +201,9 @@ public class AuthenticationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -229,9 +229,9 @@ public class AuthenticationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -302,9 +302,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return DashboardAccessOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -330,9 +330,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;DashboardAccessOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -360,9 +360,9 @@ public class AuthenticationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -390,9 +390,9 @@ public class AuthenticationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -459,9 +459,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return OneTimeTokenOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -485,9 +485,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;OneTimeTokenOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -513,9 +513,9 @@ public class AuthenticationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -542,9 +542,9 @@ public class AuthenticationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -617,9 +617,9 @@ public class AuthenticationApi {
      * @param applicationTokenExpireIn  (required)
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -643,9 +643,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -671,9 +671,9 @@ public class AuthenticationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -697,9 +697,9 @@ public class AuthenticationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -759,9 +759,9 @@ public class AuthenticationApi {
      * Logout an app token.  Trying to log out other tokens will fail.
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -783,9 +783,9 @@ public class AuthenticationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -809,9 +809,9 @@ public class AuthenticationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details: 
+     * http.response.details
      <table border="1">
-        <caption>Response Details</caption>
+       <caption>Response Deatails</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
