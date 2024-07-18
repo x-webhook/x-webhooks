@@ -69,9 +69,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -145,9 +144,8 @@ public class IntegrationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return IntegrationOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -172,9 +170,8 @@ public class IntegrationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;IntegrationOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -201,9 +198,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -229,9 +225,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -300,9 +295,8 @@ public class IntegrationApi {
      * @param appId The app&#39;s ID or UID (required)
      * @param integId The integ&#39;s ID (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -325,9 +319,8 @@ public class IntegrationApi {
      * @param integId The integ&#39;s ID (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -352,9 +345,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -379,9 +371,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -451,9 +442,8 @@ public class IntegrationApi {
      * @param integId The integ&#39;s ID (required)
      * @return IntegrationOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -477,9 +467,8 @@ public class IntegrationApi {
      * @param integId The integ&#39;s ID (required)
      * @return ApiResponse&lt;IntegrationOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -505,9 +494,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -533,9 +521,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -608,9 +595,8 @@ public class IntegrationApi {
      * @param integId The integ&#39;s ID (required)
      * @return IntegrationKeyOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -636,9 +622,8 @@ public class IntegrationApi {
      * @param integId The integ&#39;s ID (required)
      * @return ApiResponse&lt;IntegrationKeyOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -666,9 +651,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -698,9 +682,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -778,9 +761,8 @@ public class IntegrationApi {
      * @param order The sorting order of the returned items (optional)
      * @return ListResponseIntegrationOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -806,9 +788,8 @@ public class IntegrationApi {
      * @param order The sorting order of the returned items (optional)
      * @return ApiResponse&lt;ListResponseIntegrationOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -836,9 +817,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -865,9 +845,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -942,9 +921,8 @@ public class IntegrationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return IntegrationKeyOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -969,9 +947,8 @@ public class IntegrationApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;IntegrationKeyOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -998,9 +975,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1027,9 +1003,8 @@ public class IntegrationApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1105,9 +1080,8 @@ public class IntegrationApi {
      * @param integrationUpdate  (required)
      * @return IntegrationOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1132,9 +1106,8 @@ public class IntegrationApi {
      * @param integrationUpdate  (required)
      * @return ApiResponse&lt;IntegrationOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1161,9 +1134,8 @@ public class IntegrationApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>

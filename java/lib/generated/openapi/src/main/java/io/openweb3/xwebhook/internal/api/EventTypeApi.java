@@ -74,9 +74,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -143,9 +142,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return EventTypeOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -169,9 +167,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;EventTypeOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -197,9 +194,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -225,9 +221,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -294,9 +289,8 @@ public class EventTypeApi {
      * @param eventTypeName The event type&#39;s name (required)
      * @param expunge By default event types are archived when \&quot;deleted\&quot;. Passing this to &#x60;true&#x60; deletes them entirely. (optional, default to false)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -319,9 +313,8 @@ public class EventTypeApi {
      * @param expunge By default event types are archived when \&quot;deleted\&quot;. Passing this to &#x60;true&#x60; deletes them entirely. (optional, default to false)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -346,9 +339,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -372,9 +364,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -435,9 +426,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ExportEventTypeOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -460,9 +450,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;ExportEventTypeOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -487,9 +476,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -515,9 +503,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -584,9 +571,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return EventTypeExampleOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -610,9 +596,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;EventTypeExampleOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -638,9 +623,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -665,9 +649,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -730,9 +713,8 @@ public class EventTypeApi {
      * @param eventTypeName The event type&#39;s name (required)
      * @return EventTypeOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -755,9 +737,8 @@ public class EventTypeApi {
      * @param eventTypeName The event type&#39;s name (required)
      * @return ApiResponse&lt;EventTypeOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -782,9 +763,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -809,9 +789,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -874,9 +853,8 @@ public class EventTypeApi {
      * @param eventTypeName The event type&#39;s name (required)
      * @return RetryScheduleInOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -899,9 +877,8 @@ public class EventTypeApi {
      * @param eventTypeName The event type&#39;s name (required)
      * @return ApiResponse&lt;RetryScheduleInOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -926,9 +903,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -954,9 +930,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1023,9 +998,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return EventTypeImportOpenApiOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1049,9 +1023,8 @@ public class EventTypeApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;EventTypeImportOpenApiOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1077,9 +1050,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1108,9 +1080,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1191,9 +1162,8 @@ public class EventTypeApi {
      * @param withContent When &#x60;true&#x60; the full item (including the schema) is included in the response (optional, default to false)
      * @return ListResponseEventTypeOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1220,9 +1190,8 @@ public class EventTypeApi {
      * @param withContent When &#x60;true&#x60; the full item (including the schema) is included in the response (optional, default to false)
      * @return ApiResponse&lt;ListResponseEventTypeOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1251,9 +1220,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1279,9 +1247,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1350,9 +1317,8 @@ public class EventTypeApi {
      * @param eventTypePatch  (required)
      * @return EventTypeOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1376,9 +1342,8 @@ public class EventTypeApi {
      * @param eventTypePatch  (required)
      * @return ApiResponse&lt;EventTypeOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1404,9 +1369,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1432,9 +1396,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
@@ -1504,9 +1467,8 @@ public class EventTypeApi {
      * @param eventTypeUpdate  (required)
      * @return EventTypeOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
@@ -1531,9 +1493,8 @@ public class EventTypeApi {
      * @param eventTypeUpdate  (required)
      * @return ApiResponse&lt;EventTypeOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
@@ -1560,9 +1521,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
@@ -1589,9 +1549,8 @@ public class EventTypeApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1660,9 +1619,8 @@ public class EventTypeApi {
      * @param retryScheduleInOut  (required)
      * @return RetryScheduleInOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1686,9 +1644,8 @@ public class EventTypeApi {
      * @param retryScheduleInOut  (required)
      * @return ApiResponse&lt;RetryScheduleInOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1714,9 +1671,8 @@ public class EventTypeApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>

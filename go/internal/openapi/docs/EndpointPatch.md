@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **Disabled** | Pointer to **bool** |  | [optional] 
 **FilterTypes** | Pointer to **[]string** |  | [optional] 
-**Metadata** | Pointer to **map[string]string** |  | [optional] 
+**Metadata** | Pointer to **map[string]interface{}** |  | [optional] 
 **Headers** | Pointer to **map[string]string** |  | [optional] 
-**PayloadRules** | Pointer to **map[string]map[string]interface{}** | The filter rules for the message payload. | [optional] 
+**PayloadRules** | Pointer to **map[string]interface{}** | The filter rules for the message payload. | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Secret** | Pointer to **NullableString** | The endpoint&#39;s verification secret. If &#x60;null&#x60; is passed, a secret is automatically generated. Format: &#x60;base64&#x60; encoded random bytes optionally prefixed with &#x60;whsec_&#x60;. Recommended size: 24. | [optional] 
 **Uid** | Pointer to **NullableString** | The ep&#39;s UID | [optional] 
@@ -158,20 +158,20 @@ HasFilterTypes returns a boolean if a field has been set.
 UnsetFilterTypes ensures that no value is present for FilterTypes, not even an explicit nil
 ### GetMetadata
 
-`func (o *EndpointPatch) GetMetadata() map[string]string`
+`func (o *EndpointPatch) GetMetadata() map[string]interface{}`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *EndpointPatch) GetMetadataOk() (*map[string]string, bool)`
+`func (o *EndpointPatch) GetMetadataOk() (*map[string]interface{}, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *EndpointPatch) SetMetadata(v map[string]string)`
+`func (o *EndpointPatch) SetMetadata(v map[string]interface{})`
 
 SetMetadata sets Metadata field to given value.
 
@@ -181,6 +181,16 @@ SetMetadata sets Metadata field to given value.
 
 HasMetadata returns a boolean if a field has been set.
 
+### SetMetadataNil
+
+`func (o *EndpointPatch) SetMetadataNil(b bool)`
+
+ SetMetadataNil sets the value for Metadata to be an explicit nil
+
+### UnsetMetadata
+`func (o *EndpointPatch) UnsetMetadata()`
+
+UnsetMetadata ensures that no value is present for Metadata, not even an explicit nil
 ### GetHeaders
 
 `func (o *EndpointPatch) GetHeaders() map[string]string`
@@ -206,22 +216,32 @@ SetHeaders sets Headers field to given value.
 
 HasHeaders returns a boolean if a field has been set.
 
+### SetHeadersNil
+
+`func (o *EndpointPatch) SetHeadersNil(b bool)`
+
+ SetHeadersNil sets the value for Headers to be an explicit nil
+
+### UnsetHeaders
+`func (o *EndpointPatch) UnsetHeaders()`
+
+UnsetHeaders ensures that no value is present for Headers, not even an explicit nil
 ### GetPayloadRules
 
-`func (o *EndpointPatch) GetPayloadRules() map[string]map[string]interface{}`
+`func (o *EndpointPatch) GetPayloadRules() map[string]interface{}`
 
 GetPayloadRules returns the PayloadRules field if non-nil, zero value otherwise.
 
 ### GetPayloadRulesOk
 
-`func (o *EndpointPatch) GetPayloadRulesOk() (*map[string]map[string]interface{}, bool)`
+`func (o *EndpointPatch) GetPayloadRulesOk() (*map[string]interface{}, bool)`
 
 GetPayloadRulesOk returns a tuple with the PayloadRules field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPayloadRules
 
-`func (o *EndpointPatch) SetPayloadRules(v map[string]map[string]interface{})`
+`func (o *EndpointPatch) SetPayloadRules(v map[string]interface{})`
 
 SetPayloadRules sets PayloadRules field to given value.
 

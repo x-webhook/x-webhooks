@@ -20,10 +20,10 @@ type EndpointPatch struct {
 	Description *string `json:"description,omitempty"`
 	Disabled *bool `json:"disabled,omitempty"`
 	FilterTypes []string `json:"filterTypes,omitempty"`
-	Metadata *map[string]string `json:"metadata,omitempty"`
-	Headers *map[string]string `json:"headers,omitempty"`
+	Metadata map[string]interface{} `json:"metadata,omitempty"`
+	Headers map[string]string `json:"headers,omitempty"`
 	// The filter rules for the message payload.
-	PayloadRules map[string]map[string]interface{} `json:"payloadRules,omitempty"`
+	PayloadRules map[string]interface{} `json:"payloadRules,omitempty"`
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// The endpoint's verification secret. If `null` is passed, a secret is automatically generated. Format: `base64` encoded random bytes optionally prefixed with `whsec_`. Recommended size: 24.
 	Secret NullableString `json:"secret,omitempty"`
@@ -180,22 +180,23 @@ func (o *EndpointPatch) SetFilterTypes(v []string) {
 	o.FilterTypes = v
 }
 
-// GetMetadata returns the Metadata field value if set, zero value otherwise.
-func (o *EndpointPatch) GetMetadata() map[string]string {
-	if o == nil || o.Metadata == nil {
-		var ret map[string]string
+// GetMetadata returns the Metadata field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *EndpointPatch) GetMetadata() map[string]interface{} {
+	if o == nil  {
+		var ret map[string]interface{}
 		return ret
 	}
-	return *o.Metadata
+	return o.Metadata
 }
 
 // GetMetadataOk returns a tuple with the Metadata field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *EndpointPatch) GetMetadataOk() (*map[string]string, bool) {
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *EndpointPatch) GetMetadataOk() (*map[string]interface{}, bool) {
 	if o == nil || o.Metadata == nil {
 		return nil, false
 	}
-	return o.Metadata, true
+	return &o.Metadata, true
 }
 
 // HasMetadata returns a boolean if a field has been set.
@@ -207,27 +208,28 @@ func (o *EndpointPatch) HasMetadata() bool {
 	return false
 }
 
-// SetMetadata gets a reference to the given map[string]string and assigns it to the Metadata field.
-func (o *EndpointPatch) SetMetadata(v map[string]string) {
-	o.Metadata = &v
+// SetMetadata gets a reference to the given map[string]interface{} and assigns it to the Metadata field.
+func (o *EndpointPatch) SetMetadata(v map[string]interface{}) {
+	o.Metadata = v
 }
 
-// GetHeaders returns the Headers field value if set, zero value otherwise.
+// GetHeaders returns the Headers field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *EndpointPatch) GetHeaders() map[string]string {
-	if o == nil || o.Headers == nil {
+	if o == nil  {
 		var ret map[string]string
 		return ret
 	}
-	return *o.Headers
+	return o.Headers
 }
 
 // GetHeadersOk returns a tuple with the Headers field value if set, nil otherwise
 // and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
 func (o *EndpointPatch) GetHeadersOk() (*map[string]string, bool) {
 	if o == nil || o.Headers == nil {
 		return nil, false
 	}
-	return o.Headers, true
+	return &o.Headers, true
 }
 
 // HasHeaders returns a boolean if a field has been set.
@@ -241,13 +243,13 @@ func (o *EndpointPatch) HasHeaders() bool {
 
 // SetHeaders gets a reference to the given map[string]string and assigns it to the Headers field.
 func (o *EndpointPatch) SetHeaders(v map[string]string) {
-	o.Headers = &v
+	o.Headers = v
 }
 
 // GetPayloadRules returns the PayloadRules field value if set, zero value otherwise (both if not set or set to explicit null).
-func (o *EndpointPatch) GetPayloadRules() map[string]map[string]interface{} {
+func (o *EndpointPatch) GetPayloadRules() map[string]interface{} {
 	if o == nil  {
-		var ret map[string]map[string]interface{}
+		var ret map[string]interface{}
 		return ret
 	}
 	return o.PayloadRules
@@ -256,7 +258,7 @@ func (o *EndpointPatch) GetPayloadRules() map[string]map[string]interface{} {
 // GetPayloadRulesOk returns a tuple with the PayloadRules field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 // NOTE: If the value is an explicit nil, `nil, true` will be returned
-func (o *EndpointPatch) GetPayloadRulesOk() (*map[string]map[string]interface{}, bool) {
+func (o *EndpointPatch) GetPayloadRulesOk() (*map[string]interface{}, bool) {
 	if o == nil || o.PayloadRules == nil {
 		return nil, false
 	}
@@ -272,8 +274,8 @@ func (o *EndpointPatch) HasPayloadRules() bool {
 	return false
 }
 
-// SetPayloadRules gets a reference to the given map[string]map[string]interface{} and assigns it to the PayloadRules field.
-func (o *EndpointPatch) SetPayloadRules(v map[string]map[string]interface{}) {
+// SetPayloadRules gets a reference to the given map[string]interface{} and assigns it to the PayloadRules field.
+func (o *EndpointPatch) SetPayloadRules(v map[string]interface{}) {
 	o.PayloadRules = v
 }
 

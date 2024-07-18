@@ -15080,15 +15080,16 @@ components:
       example:
         uid: unique-app-identifier
         metadata:
-          key: metadata
+          key: ""
         rateLimit: 1
         name: My first application
         description: This is my first application
+        disableDefaultSignature: false
       properties:
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
           default: {}
+          nullable: true
           type: object
         name:
           example: My first application
@@ -15114,6 +15115,12 @@ components:
           minLength: 1
           nullable: true
           type: string
+        disableDefaultSignature:
+          description: Disable the webhook server auto generate signature for the
+            request send to this application's endpoint.
+          example: false
+          nullable: true
+          type: boolean
       required:
       - name
       type: object
@@ -15122,10 +15129,11 @@ components:
         createdAt: 2000-01-23T04:56:07.000+00:00
         uid: unique-app-identifier
         metadata:
-          key: metadata
+          key: ""
         rateLimit: 0
         name: My first application
         id: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
+        disableDefaultSignature: false
         updatedAt: 2000-01-23T04:56:07.000+00:00
       properties:
         createdAt:
@@ -15136,8 +15144,7 @@ components:
           example: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
           type: string
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
           type: object
         name:
           example: My first application
@@ -15158,6 +15165,12 @@ components:
         updatedAt:
           format: date-time
           type: string
+        disableDefaultSignature:
+          description: Disable the webhook server auto generate signature for the
+            request send to this application's endpoint.
+          example: false
+          nullable: true
+          type: boolean
       required:
       - createdAt
       - id
@@ -15169,13 +15182,14 @@ components:
       example:
         uid: unique-app-identifier
         metadata:
-          key: metadata
+          key: ""
         rateLimit: 0
         name: name
+        disableDefaultSignature: false
       properties:
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
+          nullable: true
           type: object
         name:
           type: string
@@ -15192,6 +15206,12 @@ components:
           nullable: true
           pattern: ^[a-zA-Z0-9\-_.]+$
           type: string
+        disableDefaultSignature:
+          description: Disable the webhook server auto generate signature for the
+            request send to this application's endpoint.
+          example: false
+          nullable: true
+          type: boolean
       type: object
     ApplicationStats:
       example:
@@ -15698,7 +15718,7 @@ components:
           X-Foobar: Bar
         uid: unique-ep-identifier
         metadata:
-          key: metadata
+          key: ""
         rateLimit: 1
         channels:
         - project_123
@@ -15756,9 +15776,9 @@ components:
           type: array
           uniqueItems: true
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
           default: {}
+          nullable: true
           type: object
         headers:
           additionalProperties:
@@ -15766,10 +15786,10 @@ components:
           example:
             X-Example: "123"
             X-Foobar: Bar
+          nullable: true
           type: object
         payloadRules:
-          additionalProperties:
-            type: object
+          additionalProperties: {}
           description: The filter rules for the message payload.
           example:
             type: tx.created
@@ -16049,8 +16069,7 @@ components:
           example: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
           type: string
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
           example:
             X-Example: "123"
             X-Foobar: Bar
@@ -16061,10 +16080,10 @@ components:
           example:
             X-Example: "123"
             X-Foobar: Bar
+          nullable: true
           type: object
         payloadRules:
-          additionalProperties:
-            type: object
+          additionalProperties: {}
           description: The filter rules for the message payload.
           example:
             type: tx.created
@@ -16161,11 +16180,11 @@ components:
           type: array
           uniqueItems: true
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
           example:
             X-Example: "123"
             X-Foobar: Bar
+          nullable: true
           type: object
         headers:
           additionalProperties:
@@ -16173,10 +16192,10 @@ components:
           example:
             X-Example: "123"
             X-Foobar: Bar
+          nullable: true
           type: object
         payloadRules:
-          additionalProperties:
-            type: object
+          additionalProperties: {}
           description: The filter rules for the message payload.
           example:
             type: tx.created
@@ -16352,7 +16371,7 @@ components:
       example:
         uid: unique-ep-identifier
         metadata:
-          key: metadata
+          key: ""
         rateLimit: 1
         channels:
         - project_123
@@ -16404,9 +16423,9 @@ components:
           type: array
           uniqueItems: true
         metadata:
-          additionalProperties:
-            type: string
+          additionalProperties: {}
           default: {}
+          nullable: true
           type: object
         rateLimit:
           format: uint16
@@ -17523,18 +17542,20 @@ components:
         - createdAt: 2000-01-23T04:56:07.000+00:00
           uid: unique-app-identifier
           metadata:
-            key: metadata
+            key: ""
           rateLimit: 0
           name: My first application
           id: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
+          disableDefaultSignature: false
           updatedAt: 2000-01-23T04:56:07.000+00:00
         - createdAt: 2000-01-23T04:56:07.000+00:00
           uid: unique-app-identifier
           metadata:
-            key: metadata
+            key: ""
           rateLimit: 0
           name: My first application
           id: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
+          disableDefaultSignature: false
           updatedAt: 2000-01-23T04:56:07.000+00:00
         prevIterator: -iterator
         done: true
@@ -18714,10 +18735,11 @@ components:
         application:
           uid: unique-app-identifier
           metadata:
-            key: metadata
+            key: ""
           rateLimit: 1
           name: My first application
           description: This is my first application
+          disableDefaultSignature: false
         channels:
         - project_123
         - group_2

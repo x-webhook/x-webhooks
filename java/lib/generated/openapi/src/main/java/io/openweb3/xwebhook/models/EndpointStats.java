@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * EndpointStats
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T22:55:50.941287+08:00[Asia/Shanghai]")
 public class EndpointStats {
   public static final String SERIALIZED_NAME_FAIL = "fail";
   @SerializedName(SERIALIZED_NAME_FAIL)

@@ -20,19 +20,21 @@ type ApplicationOut struct {
 	CreatedAt time.Time `json:"createdAt"`
 	// The app's ID
 	Id string `json:"id"`
-	Metadata map[string]string `json:"metadata"`
+	Metadata map[string]interface{} `json:"metadata"`
 	Name string `json:"name"`
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// The app's UID
 	Uid NullableString `json:"uid,omitempty"`
 	UpdatedAt time.Time `json:"updatedAt"`
+	// Disable the webhook server auto generate signature for the request send to this application's endpoint.
+	DisableDefaultSignature NullableBool `json:"disableDefaultSignature,omitempty"`
 }
 
 // NewApplicationOut instantiates a new ApplicationOut object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewApplicationOut(createdAt time.Time, id string, metadata map[string]string, name string, updatedAt time.Time) *ApplicationOut {
+func NewApplicationOut(createdAt time.Time, id string, metadata map[string]interface{}, name string, updatedAt time.Time) *ApplicationOut {
 	this := ApplicationOut{}
 	this.CreatedAt = createdAt
 	this.Id = id
@@ -99,9 +101,9 @@ func (o *ApplicationOut) SetId(v string) {
 }
 
 // GetMetadata returns the Metadata field value
-func (o *ApplicationOut) GetMetadata() map[string]string {
+func (o *ApplicationOut) GetMetadata() map[string]interface{} {
 	if o == nil {
-		var ret map[string]string
+		var ret map[string]interface{}
 		return ret
 	}
 
@@ -110,7 +112,7 @@ func (o *ApplicationOut) GetMetadata() map[string]string {
 
 // GetMetadataOk returns a tuple with the Metadata field value
 // and a boolean to check if the value has been set.
-func (o *ApplicationOut) GetMetadataOk() (*map[string]string, bool) {
+func (o *ApplicationOut) GetMetadataOk() (*map[string]interface{}, bool) {
 	if o == nil  {
 		return nil, false
 	}
@@ -118,7 +120,7 @@ func (o *ApplicationOut) GetMetadataOk() (*map[string]string, bool) {
 }
 
 // SetMetadata sets field value
-func (o *ApplicationOut) SetMetadata(v map[string]string) {
+func (o *ApplicationOut) SetMetadata(v map[string]interface{}) {
 	o.Metadata = v
 }
 
@@ -254,6 +256,48 @@ func (o *ApplicationOut) SetUpdatedAt(v time.Time) {
 	o.UpdatedAt = v
 }
 
+// GetDisableDefaultSignature returns the DisableDefaultSignature field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *ApplicationOut) GetDisableDefaultSignature() bool {
+	if o == nil || o.DisableDefaultSignature.Get() == nil {
+		var ret bool
+		return ret
+	}
+	return *o.DisableDefaultSignature.Get()
+}
+
+// GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *ApplicationOut) GetDisableDefaultSignatureOk() (*bool, bool) {
+	if o == nil  {
+		return nil, false
+	}
+	return o.DisableDefaultSignature.Get(), o.DisableDefaultSignature.IsSet()
+}
+
+// HasDisableDefaultSignature returns a boolean if a field has been set.
+func (o *ApplicationOut) HasDisableDefaultSignature() bool {
+	if o != nil && o.DisableDefaultSignature.IsSet() {
+		return true
+	}
+
+	return false
+}
+
+// SetDisableDefaultSignature gets a reference to the given NullableBool and assigns it to the DisableDefaultSignature field.
+func (o *ApplicationOut) SetDisableDefaultSignature(v bool) {
+	o.DisableDefaultSignature.Set(&v)
+}
+// SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
+func (o *ApplicationOut) SetDisableDefaultSignatureNil() {
+	o.DisableDefaultSignature.Set(nil)
+}
+
+// UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
+func (o *ApplicationOut) UnsetDisableDefaultSignature() {
+	o.DisableDefaultSignature.Unset()
+}
+
 func (o ApplicationOut) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if true {
@@ -276,6 +320,9 @@ func (o ApplicationOut) MarshalJSON() ([]byte, error) {
 	}
 	if true {
 		toSerialize["updatedAt"] = o.UpdatedAt
+	}
+	if o.DisableDefaultSignature.IsSet() {
+		toSerialize["disableDefaultSignature"] = o.DisableDefaultSignature.Get()
 	}
 	return json.Marshal(toSerialize)
 }

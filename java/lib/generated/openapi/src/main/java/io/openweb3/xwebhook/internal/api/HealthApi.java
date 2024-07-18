@@ -60,9 +60,8 @@ public class HealthApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -117,9 +116,8 @@ public class HealthApi {
      * Health
      * Verify the API server is up and running.
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -140,9 +138,8 @@ public class HealthApi {
      * Verify the API server is up and running.
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -165,9 +162,8 @@ public class HealthApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>

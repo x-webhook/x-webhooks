@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **disabled** | **Boolean** |  |  [optional]
 **filterTypes** | **Set&lt;String&gt;** |  |  [optional]
 **id** | **String** | The ep&#39;s ID | 
-**metadata** | **Map&lt;String, String&gt;** |  | 
+**metadata** | **Map&lt;String, Object&gt;** |  | 
 **headers** | **Map&lt;String, String&gt;** |  |  [optional]
 **payloadRules** | **Map&lt;String, Object&gt;** | The filter rules for the message payload. |  [optional]
 **rateLimit** | **Integer** |  |  [optional]

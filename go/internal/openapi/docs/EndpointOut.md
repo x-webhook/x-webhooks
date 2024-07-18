@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **Disabled** | Pointer to **bool** |  | [optional] [default to false]
 **FilterTypes** | Pointer to **[]string** |  | [optional] 
 **Id** | **string** | The ep&#39;s ID | 
-**Metadata** | **map[string]string** |  | 
+**Metadata** | **map[string]interface{}** |  | 
 **Headers** | Pointer to **map[string]string** |  | [optional] 
-**PayloadRules** | Pointer to **map[string]map[string]interface{}** | The filter rules for the message payload. | [optional] 
+**PayloadRules** | Pointer to **map[string]interface{}** | The filter rules for the message payload. | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | Optional unique identifier for the endpoint | [optional] 
 **UpdatedAt** | **time.Time** |  | 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewEndpointOut
 
-`func NewEndpointOut(createdAt time.Time, description string, id string, metadata map[string]string, updatedAt time.Time, url string, version int32, ) *EndpointOut`
+`func NewEndpointOut(createdAt time.Time, description string, id string, metadata map[string]interface{}, updatedAt time.Time, url string, version int32, ) *EndpointOut`
 
 NewEndpointOut instantiates a new EndpointOut object
 This constructor will assign default values to properties that have it defined,
@@ -195,20 +195,20 @@ SetId sets Id field to given value.
 
 ### GetMetadata
 
-`func (o *EndpointOut) GetMetadata() map[string]string`
+`func (o *EndpointOut) GetMetadata() map[string]interface{}`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *EndpointOut) GetMetadataOk() (*map[string]string, bool)`
+`func (o *EndpointOut) GetMetadataOk() (*map[string]interface{}, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *EndpointOut) SetMetadata(v map[string]string)`
+`func (o *EndpointOut) SetMetadata(v map[string]interface{})`
 
 SetMetadata sets Metadata field to given value.
 
@@ -238,22 +238,32 @@ SetHeaders sets Headers field to given value.
 
 HasHeaders returns a boolean if a field has been set.
 
+### SetHeadersNil
+
+`func (o *EndpointOut) SetHeadersNil(b bool)`
+
+ SetHeadersNil sets the value for Headers to be an explicit nil
+
+### UnsetHeaders
+`func (o *EndpointOut) UnsetHeaders()`
+
+UnsetHeaders ensures that no value is present for Headers, not even an explicit nil
 ### GetPayloadRules
 
-`func (o *EndpointOut) GetPayloadRules() map[string]map[string]interface{}`
+`func (o *EndpointOut) GetPayloadRules() map[string]interface{}`
 
 GetPayloadRules returns the PayloadRules field if non-nil, zero value otherwise.
 
 ### GetPayloadRulesOk
 
-`func (o *EndpointOut) GetPayloadRulesOk() (*map[string]map[string]interface{}, bool)`
+`func (o *EndpointOut) GetPayloadRulesOk() (*map[string]interface{}, bool)`
 
 GetPayloadRulesOk returns a tuple with the PayloadRules field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPayloadRules
 
-`func (o *EndpointOut) SetPayloadRules(v map[string]map[string]interface{})`
+`func (o *EndpointOut) SetPayloadRules(v map[string]interface{})`
 
 SetPayloadRules sets PayloadRules field to given value.
 

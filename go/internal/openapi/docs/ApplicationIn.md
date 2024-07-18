@@ -4,11 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Metadata** | Pointer to **map[string]string** |  | [optional] [default to {}]
+**Metadata** | Pointer to **map[string]interface{}** |  | [optional] [default to {}]
 **Name** | **string** |  | 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | Optional unique identifier for the application | [optional] 
 **Description** | Pointer to **NullableString** | The application description | [optional] 
+**DisableDefaultSignature** | Pointer to **NullableBool** | Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint. | [optional] 
 
 ## Methods
 
@@ -31,20 +32,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetMetadata
 
-`func (o *ApplicationIn) GetMetadata() map[string]string`
+`func (o *ApplicationIn) GetMetadata() map[string]interface{}`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ApplicationIn) GetMetadataOk() (*map[string]string, bool)`
+`func (o *ApplicationIn) GetMetadataOk() (*map[string]interface{}, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ApplicationIn) SetMetadata(v map[string]string)`
+`func (o *ApplicationIn) SetMetadata(v map[string]interface{})`
 
 SetMetadata sets Metadata field to given value.
 
@@ -54,6 +55,16 @@ SetMetadata sets Metadata field to given value.
 
 HasMetadata returns a boolean if a field has been set.
 
+### SetMetadataNil
+
+`func (o *ApplicationIn) SetMetadataNil(b bool)`
+
+ SetMetadataNil sets the value for Metadata to be an explicit nil
+
+### UnsetMetadata
+`func (o *ApplicationIn) UnsetMetadata()`
+
+UnsetMetadata ensures that no value is present for Metadata, not even an explicit nil
 ### GetName
 
 `func (o *ApplicationIn) GetName() string`
@@ -179,6 +190,41 @@ HasDescription returns a boolean if a field has been set.
 `func (o *ApplicationIn) UnsetDescription()`
 
 UnsetDescription ensures that no value is present for Description, not even an explicit nil
+### GetDisableDefaultSignature
+
+`func (o *ApplicationIn) GetDisableDefaultSignature() bool`
+
+GetDisableDefaultSignature returns the DisableDefaultSignature field if non-nil, zero value otherwise.
+
+### GetDisableDefaultSignatureOk
+
+`func (o *ApplicationIn) GetDisableDefaultSignatureOk() (*bool, bool)`
+
+GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDisableDefaultSignature
+
+`func (o *ApplicationIn) SetDisableDefaultSignature(v bool)`
+
+SetDisableDefaultSignature sets DisableDefaultSignature field to given value.
+
+### HasDisableDefaultSignature
+
+`func (o *ApplicationIn) HasDisableDefaultSignature() bool`
+
+HasDisableDefaultSignature returns a boolean if a field has been set.
+
+### SetDisableDefaultSignatureNil
+
+`func (o *ApplicationIn) SetDisableDefaultSignatureNil(b bool)`
+
+ SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
+
+### UnsetDisableDefaultSignature
+`func (o *ApplicationIn) UnsetDisableDefaultSignature()`
+
+UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

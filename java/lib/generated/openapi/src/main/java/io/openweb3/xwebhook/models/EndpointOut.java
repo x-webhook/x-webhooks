@@ -34,7 +34,7 @@ import java.util.Set;
 /**
  * EndpointOut
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T22:55:50.941287+08:00[Asia/Shanghai]")
 public class EndpointOut {
   public static final String SERIALIZED_NAME_CHANNELS = "channels";
   @SerializedName(SERIALIZED_NAME_CHANNELS)
@@ -62,7 +62,7 @@ public class EndpointOut {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private Map<String, String> metadata = new HashMap<>();
+  private Map<String, Object> metadata = new HashMap<>();
 
   public static final String SERIALIZED_NAME_HEADERS = "headers";
   @SerializedName(SERIALIZED_NAME_HEADERS)
@@ -244,13 +244,13 @@ public class EndpointOut {
   }
 
 
-  public EndpointOut metadata(Map<String, String> metadata) {
+  public EndpointOut metadata(Map<String, Object> metadata) {
     
     this.metadata = metadata;
     return this;
   }
 
-  public EndpointOut putMetadataItem(String key, String metadataItem) {
+  public EndpointOut putMetadataItem(String key, Object metadataItem) {
     this.metadata.put(key, metadataItem);
     return this;
   }
@@ -261,12 +261,12 @@ public class EndpointOut {
   **/
   @ApiModelProperty(example = "{\"X-Example\":\"123\",\"X-Foobar\":\"Bar\"}", required = true, value = "")
 
-  public Map<String, String> getMetadata() {
+  public Map<String, Object> getMetadata() {
     return metadata;
   }
 
 
-  public void setMetadata(Map<String, String> metadata) {
+  public void setMetadata(Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 

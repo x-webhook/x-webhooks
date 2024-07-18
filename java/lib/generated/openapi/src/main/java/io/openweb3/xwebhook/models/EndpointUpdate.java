@@ -33,7 +33,7 @@ import java.util.Set;
 /**
  * EndpointUpdate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T22:55:50.941287+08:00[Asia/Shanghai]")
 public class EndpointUpdate {
   public static final String SERIALIZED_NAME_CHANNELS = "channels";
   @SerializedName(SERIALIZED_NAME_CHANNELS)
@@ -53,7 +53,7 @@ public class EndpointUpdate {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private Map<String, String> metadata = null;
+  private Map<String, Object> metadata = null;
 
   public static final String SERIALIZED_NAME_RATE_LIMIT = "rateLimit";
   @SerializedName(SERIALIZED_NAME_RATE_LIMIT)
@@ -180,13 +180,13 @@ public class EndpointUpdate {
   }
 
 
-  public EndpointUpdate metadata(Map<String, String> metadata) {
+  public EndpointUpdate metadata(Map<String, Object> metadata) {
     
     this.metadata = metadata;
     return this;
   }
 
-  public EndpointUpdate putMetadataItem(String key, String metadataItem) {
+  public EndpointUpdate putMetadataItem(String key, Object metadataItem) {
     if (this.metadata == null) {
       this.metadata = new HashMap<>();
     }
@@ -201,12 +201,12 @@ public class EndpointUpdate {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Map<String, String> getMetadata() {
+  public Map<String, Object> getMetadata() {
     return metadata;
   }
 
 
-  public void setMetadata(Map<String, String> metadata) {
+  public void setMetadata(Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 

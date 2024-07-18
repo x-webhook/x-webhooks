@@ -4,10 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Metadata** | Pointer to **map[string]string** |  | [optional] 
+**Metadata** | Pointer to **map[string]interface{}** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | The app&#39;s UID | [optional] 
+**DisableDefaultSignature** | Pointer to **NullableBool** | Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint. | [optional] 
 
 ## Methods
 
@@ -30,20 +31,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetMetadata
 
-`func (o *ApplicationPatch) GetMetadata() map[string]string`
+`func (o *ApplicationPatch) GetMetadata() map[string]interface{}`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ApplicationPatch) GetMetadataOk() (*map[string]string, bool)`
+`func (o *ApplicationPatch) GetMetadataOk() (*map[string]interface{}, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ApplicationPatch) SetMetadata(v map[string]string)`
+`func (o *ApplicationPatch) SetMetadata(v map[string]interface{})`
 
 SetMetadata sets Metadata field to given value.
 
@@ -53,6 +54,16 @@ SetMetadata sets Metadata field to given value.
 
 HasMetadata returns a boolean if a field has been set.
 
+### SetMetadataNil
+
+`func (o *ApplicationPatch) SetMetadataNil(b bool)`
+
+ SetMetadataNil sets the value for Metadata to be an explicit nil
+
+### UnsetMetadata
+`func (o *ApplicationPatch) UnsetMetadata()`
+
+UnsetMetadata ensures that no value is present for Metadata, not even an explicit nil
 ### GetName
 
 `func (o *ApplicationPatch) GetName() string`
@@ -148,6 +159,41 @@ HasUid returns a boolean if a field has been set.
 `func (o *ApplicationPatch) UnsetUid()`
 
 UnsetUid ensures that no value is present for Uid, not even an explicit nil
+### GetDisableDefaultSignature
+
+`func (o *ApplicationPatch) GetDisableDefaultSignature() bool`
+
+GetDisableDefaultSignature returns the DisableDefaultSignature field if non-nil, zero value otherwise.
+
+### GetDisableDefaultSignatureOk
+
+`func (o *ApplicationPatch) GetDisableDefaultSignatureOk() (*bool, bool)`
+
+GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDisableDefaultSignature
+
+`func (o *ApplicationPatch) SetDisableDefaultSignature(v bool)`
+
+SetDisableDefaultSignature sets DisableDefaultSignature field to given value.
+
+### HasDisableDefaultSignature
+
+`func (o *ApplicationPatch) HasDisableDefaultSignature() bool`
+
+HasDisableDefaultSignature returns a boolean if a field has been set.
+
+### SetDisableDefaultSignatureNil
+
+`func (o *ApplicationPatch) SetDisableDefaultSignatureNil(b bool)`
+
+ SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
+
+### UnsetDisableDefaultSignature
+`func (o *ApplicationPatch) UnsetDisableDefaultSignature()`
+
+UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

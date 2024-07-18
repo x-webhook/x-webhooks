@@ -6,17 +6,18 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CreatedAt** | **time.Time** |  | 
 **Id** | **string** | The app&#39;s ID | 
-**Metadata** | **map[string]string** |  | 
+**Metadata** | **map[string]interface{}** |  | 
 **Name** | **string** |  | 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | The app&#39;s UID | [optional] 
 **UpdatedAt** | **time.Time** |  | 
+**DisableDefaultSignature** | Pointer to **NullableBool** | Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint. | [optional] 
 
 ## Methods
 
 ### NewApplicationOut
 
-`func NewApplicationOut(createdAt time.Time, id string, metadata map[string]string, name string, updatedAt time.Time, ) *ApplicationOut`
+`func NewApplicationOut(createdAt time.Time, id string, metadata map[string]interface{}, name string, updatedAt time.Time, ) *ApplicationOut`
 
 NewApplicationOut instantiates a new ApplicationOut object
 This constructor will assign default values to properties that have it defined,
@@ -73,20 +74,20 @@ SetId sets Id field to given value.
 
 ### GetMetadata
 
-`func (o *ApplicationOut) GetMetadata() map[string]string`
+`func (o *ApplicationOut) GetMetadata() map[string]interface{}`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *ApplicationOut) GetMetadataOk() (*map[string]string, bool)`
+`func (o *ApplicationOut) GetMetadataOk() (*map[string]interface{}, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *ApplicationOut) SetMetadata(v map[string]string)`
+`func (o *ApplicationOut) SetMetadata(v map[string]interface{})`
 
 SetMetadata sets Metadata field to given value.
 
@@ -201,6 +202,41 @@ and a boolean to check if the value has been set.
 SetUpdatedAt sets UpdatedAt field to given value.
 
 
+### GetDisableDefaultSignature
+
+`func (o *ApplicationOut) GetDisableDefaultSignature() bool`
+
+GetDisableDefaultSignature returns the DisableDefaultSignature field if non-nil, zero value otherwise.
+
+### GetDisableDefaultSignatureOk
+
+`func (o *ApplicationOut) GetDisableDefaultSignatureOk() (*bool, bool)`
+
+GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDisableDefaultSignature
+
+`func (o *ApplicationOut) SetDisableDefaultSignature(v bool)`
+
+SetDisableDefaultSignature sets DisableDefaultSignature field to given value.
+
+### HasDisableDefaultSignature
+
+`func (o *ApplicationOut) HasDisableDefaultSignature() bool`
+
+HasDisableDefaultSignature returns a boolean if a field has been set.
+
+### SetDisableDefaultSignatureNil
+
+`func (o *ApplicationOut) SetDisableDefaultSignatureNil(b bool)`
+
+ SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
+
+### UnsetDisableDefaultSignature
+`func (o *ApplicationOut) UnsetDisableDefaultSignature()`
+
+UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

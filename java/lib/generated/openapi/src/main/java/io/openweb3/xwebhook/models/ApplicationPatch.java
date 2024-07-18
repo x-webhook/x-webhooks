@@ -30,11 +30,11 @@ import java.util.Map;
 /**
  * ApplicationPatch
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T22:55:50.941287+08:00[Asia/Shanghai]")
 public class ApplicationPatch {
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private Map<String, String> metadata = null;
+  private Map<String, Object> metadata = null;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -48,14 +48,18 @@ public class ApplicationPatch {
   @SerializedName(SERIALIZED_NAME_UID)
   private String uid;
 
+  public static final String SERIALIZED_NAME_DISABLE_DEFAULT_SIGNATURE = "disableDefaultSignature";
+  @SerializedName(SERIALIZED_NAME_DISABLE_DEFAULT_SIGNATURE)
+  private Boolean disableDefaultSignature;
 
-  public ApplicationPatch metadata(Map<String, String> metadata) {
+
+  public ApplicationPatch metadata(Map<String, Object> metadata) {
     
     this.metadata = metadata;
     return this;
   }
 
-  public ApplicationPatch putMetadataItem(String key, String metadataItem) {
+  public ApplicationPatch putMetadataItem(String key, Object metadataItem) {
     if (this.metadata == null) {
       this.metadata = new HashMap<>();
     }
@@ -70,12 +74,12 @@ public class ApplicationPatch {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Map<String, String> getMetadata() {
+  public Map<String, Object> getMetadata() {
     return metadata;
   }
 
 
-  public void setMetadata(Map<String, String> metadata) {
+  public void setMetadata(Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 
@@ -150,6 +154,29 @@ public class ApplicationPatch {
   }
 
 
+  public ApplicationPatch disableDefaultSignature(Boolean disableDefaultSignature) {
+    
+    this.disableDefaultSignature = disableDefaultSignature;
+    return this;
+  }
+
+   /**
+   * Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint.
+   * @return disableDefaultSignature
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(example = "false", value = "Disable the webhook server auto generate signature for the request send to this application's endpoint.")
+
+  public Boolean getDisableDefaultSignature() {
+    return disableDefaultSignature;
+  }
+
+
+  public void setDisableDefaultSignature(Boolean disableDefaultSignature) {
+    this.disableDefaultSignature = disableDefaultSignature;
+  }
+
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -162,12 +189,13 @@ public class ApplicationPatch {
     return Objects.equals(this.metadata, applicationPatch.metadata) &&
         Objects.equals(this.name, applicationPatch.name) &&
         Objects.equals(this.rateLimit, applicationPatch.rateLimit) &&
-        Objects.equals(this.uid, applicationPatch.uid);
+        Objects.equals(this.uid, applicationPatch.uid) &&
+        Objects.equals(this.disableDefaultSignature, applicationPatch.disableDefaultSignature);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(metadata, name, rateLimit, uid);
+    return Objects.hash(metadata, name, rateLimit, uid, disableDefaultSignature);
   }
 
   @Override
@@ -178,6 +206,7 @@ public class ApplicationPatch {
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    rateLimit: ").append(toIndentedString(rateLimit)).append("\n");
     sb.append("    uid: ").append(toIndentedString(uid)).append("\n");
+    sb.append("    disableDefaultSignature: ").append(toIndentedString(disableDefaultSignature)).append("\n");
     sb.append("}");
     return sb.toString();
   }

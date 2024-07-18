@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **description** | **String** |  |  [optional]
 **disabled** | **Boolean** |  |  [optional]
 **filterTypes** | **Set&lt;String&gt;** |  |  [optional]
-**metadata** | **Map&lt;String, String&gt;** |  |  [optional]
+**metadata** | **Map&lt;String, Object&gt;** |  |  [optional]
 **headers** | **Map&lt;String, String&gt;** |  |  [optional]
 **payloadRules** | **Map&lt;String, Object&gt;** | The filter rules for the message payload. |  [optional]
 **rateLimit** | **Integer** |  |  [optional]

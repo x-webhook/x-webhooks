@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] [default to ""]
 **Disabled** | Pointer to **bool** |  | [optional] [default to false]
 **FilterTypes** | Pointer to **[]string** |  | [optional] 
-**Metadata** | Pointer to **map[string]string** |  | [optional] [default to {}]
+**Metadata** | Pointer to **map[string]interface{}** |  | [optional] [default to {}]
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | Optional unique identifier for the endpoint | [optional] 
 **Url** | **string** |  | 
@@ -155,20 +155,20 @@ HasFilterTypes returns a boolean if a field has been set.
 UnsetFilterTypes ensures that no value is present for FilterTypes, not even an explicit nil
 ### GetMetadata
 
-`func (o *EndpointUpdate) GetMetadata() map[string]string`
+`func (o *EndpointUpdate) GetMetadata() map[string]interface{}`
 
 GetMetadata returns the Metadata field if non-nil, zero value otherwise.
 
 ### GetMetadataOk
 
-`func (o *EndpointUpdate) GetMetadataOk() (*map[string]string, bool)`
+`func (o *EndpointUpdate) GetMetadataOk() (*map[string]interface{}, bool)`
 
 GetMetadataOk returns a tuple with the Metadata field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadata
 
-`func (o *EndpointUpdate) SetMetadata(v map[string]string)`
+`func (o *EndpointUpdate) SetMetadata(v map[string]interface{})`
 
 SetMetadata sets Metadata field to given value.
 
@@ -178,6 +178,16 @@ SetMetadata sets Metadata field to given value.
 
 HasMetadata returns a boolean if a field has been set.
 
+### SetMetadataNil
+
+`func (o *EndpointUpdate) SetMetadataNil(b bool)`
+
+ SetMetadataNil sets the value for Metadata to be an explicit nil
+
+### UnsetMetadata
+`func (o *EndpointUpdate) UnsetMetadata()`
+
+UnsetMetadata ensures that no value is present for Metadata, not even an explicit nil
 ### GetRateLimit
 
 `func (o *EndpointUpdate) GetRateLimit() int32`

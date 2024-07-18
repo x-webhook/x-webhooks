@@ -16,13 +16,15 @@ import (
 
 // ApplicationIn struct for ApplicationIn
 type ApplicationIn struct {
-	Metadata *map[string]string `json:"metadata,omitempty"`
+	Metadata map[string]interface{} `json:"metadata,omitempty"`
 	Name string `json:"name"`
 	RateLimit NullableInt32 `json:"rateLimit,omitempty"`
 	// Optional unique identifier for the application
 	Uid NullableString `json:"uid,omitempty"`
 	// The application description
 	Description NullableString `json:"description,omitempty"`
+	// Disable the webhook server auto generate signature for the request send to this application's endpoint.
+	DisableDefaultSignature NullableBool `json:"disableDefaultSignature,omitempty"`
 }
 
 // NewApplicationIn instantiates a new ApplicationIn object
@@ -43,22 +45,23 @@ func NewApplicationInWithDefaults() *ApplicationIn {
 	return &this
 }
 
-// GetMetadata returns the Metadata field value if set, zero value otherwise.
-func (o *ApplicationIn) GetMetadata() map[string]string {
-	if o == nil || o.Metadata == nil {
-		var ret map[string]string
+// GetMetadata returns the Metadata field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *ApplicationIn) GetMetadata() map[string]interface{} {
+	if o == nil  {
+		var ret map[string]interface{}
 		return ret
 	}
-	return *o.Metadata
+	return o.Metadata
 }
 
 // GetMetadataOk returns a tuple with the Metadata field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApplicationIn) GetMetadataOk() (*map[string]string, bool) {
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *ApplicationIn) GetMetadataOk() (*map[string]interface{}, bool) {
 	if o == nil || o.Metadata == nil {
 		return nil, false
 	}
-	return o.Metadata, true
+	return &o.Metadata, true
 }
 
 // HasMetadata returns a boolean if a field has been set.
@@ -70,9 +73,9 @@ func (o *ApplicationIn) HasMetadata() bool {
 	return false
 }
 
-// SetMetadata gets a reference to the given map[string]string and assigns it to the Metadata field.
-func (o *ApplicationIn) SetMetadata(v map[string]string) {
-	o.Metadata = &v
+// SetMetadata gets a reference to the given map[string]interface{} and assigns it to the Metadata field.
+func (o *ApplicationIn) SetMetadata(v map[string]interface{}) {
+	o.Metadata = v
 }
 
 // GetName returns the Name field value
@@ -225,6 +228,48 @@ func (o *ApplicationIn) UnsetDescription() {
 	o.Description.Unset()
 }
 
+// GetDisableDefaultSignature returns the DisableDefaultSignature field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *ApplicationIn) GetDisableDefaultSignature() bool {
+	if o == nil || o.DisableDefaultSignature.Get() == nil {
+		var ret bool
+		return ret
+	}
+	return *o.DisableDefaultSignature.Get()
+}
+
+// GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
+func (o *ApplicationIn) GetDisableDefaultSignatureOk() (*bool, bool) {
+	if o == nil  {
+		return nil, false
+	}
+	return o.DisableDefaultSignature.Get(), o.DisableDefaultSignature.IsSet()
+}
+
+// HasDisableDefaultSignature returns a boolean if a field has been set.
+func (o *ApplicationIn) HasDisableDefaultSignature() bool {
+	if o != nil && o.DisableDefaultSignature.IsSet() {
+		return true
+	}
+
+	return false
+}
+
+// SetDisableDefaultSignature gets a reference to the given NullableBool and assigns it to the DisableDefaultSignature field.
+func (o *ApplicationIn) SetDisableDefaultSignature(v bool) {
+	o.DisableDefaultSignature.Set(&v)
+}
+// SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
+func (o *ApplicationIn) SetDisableDefaultSignatureNil() {
+	o.DisableDefaultSignature.Set(nil)
+}
+
+// UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
+func (o *ApplicationIn) UnsetDisableDefaultSignature() {
+	o.DisableDefaultSignature.Unset()
+}
+
 func (o ApplicationIn) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.Metadata != nil {
@@ -241,6 +286,9 @@ func (o ApplicationIn) MarshalJSON() ([]byte, error) {
 	}
 	if o.Description.IsSet() {
 		toSerialize["description"] = o.Description.Get()
+	}
+	if o.DisableDefaultSignature.IsSet() {
+		toSerialize["disableDefaultSignature"] = o.DisableDefaultSignature.Get()
 	}
 	return json.Marshal(toSerialize)
 }

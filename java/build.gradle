@@ -49,7 +49,8 @@ jar {
 
 javadoc {
     source = sourceSets.main.allJava
-    excludes = [ "com/xwebhook/**/*" ]
+    excludes = [ "io/openweb3/xwebhook/**/*" ]
+    options.tags = [ "http.response.details:a:Http Response Details" ]
 }
 
 apply from: "deploy.gradle"

@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * ApplicationOut
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-17T18:09:09.017597+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T22:55:50.941287+08:00[Asia/Shanghai]")
 public class ApplicationOut {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -43,7 +43,7 @@ public class ApplicationOut {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private Map<String, String> metadata = new HashMap<>();
+  private Map<String, Object> metadata = new HashMap<>();
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -60,6 +60,10 @@ public class ApplicationOut {
   public static final String SERIALIZED_NAME_UPDATED_AT = "updatedAt";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
   private OffsetDateTime updatedAt;
+
+  public static final String SERIALIZED_NAME_DISABLE_DEFAULT_SIGNATURE = "disableDefaultSignature";
+  @SerializedName(SERIALIZED_NAME_DISABLE_DEFAULT_SIGNATURE)
+  private Boolean disableDefaultSignature;
 
 
   public ApplicationOut createdAt(OffsetDateTime createdAt) {
@@ -106,13 +110,13 @@ public class ApplicationOut {
   }
 
 
-  public ApplicationOut metadata(Map<String, String> metadata) {
+  public ApplicationOut metadata(Map<String, Object> metadata) {
     
     this.metadata = metadata;
     return this;
   }
 
-  public ApplicationOut putMetadataItem(String key, String metadataItem) {
+  public ApplicationOut putMetadataItem(String key, Object metadataItem) {
     this.metadata.put(key, metadataItem);
     return this;
   }
@@ -123,12 +127,12 @@ public class ApplicationOut {
   **/
   @ApiModelProperty(required = true, value = "")
 
-  public Map<String, String> getMetadata() {
+  public Map<String, Object> getMetadata() {
     return metadata;
   }
 
 
-  public void setMetadata(Map<String, String> metadata) {
+  public void setMetadata(Map<String, Object> metadata) {
     this.metadata = metadata;
   }
 
@@ -224,6 +228,29 @@ public class ApplicationOut {
   }
 
 
+  public ApplicationOut disableDefaultSignature(Boolean disableDefaultSignature) {
+    
+    this.disableDefaultSignature = disableDefaultSignature;
+    return this;
+  }
+
+   /**
+   * Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint.
+   * @return disableDefaultSignature
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(example = "false", value = "Disable the webhook server auto generate signature for the request send to this application's endpoint.")
+
+  public Boolean getDisableDefaultSignature() {
+    return disableDefaultSignature;
+  }
+
+
+  public void setDisableDefaultSignature(Boolean disableDefaultSignature) {
+    this.disableDefaultSignature = disableDefaultSignature;
+  }
+
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -239,12 +266,13 @@ public class ApplicationOut {
         Objects.equals(this.name, applicationOut.name) &&
         Objects.equals(this.rateLimit, applicationOut.rateLimit) &&
         Objects.equals(this.uid, applicationOut.uid) &&
-        Objects.equals(this.updatedAt, applicationOut.updatedAt);
+        Objects.equals(this.updatedAt, applicationOut.updatedAt) &&
+        Objects.equals(this.disableDefaultSignature, applicationOut.disableDefaultSignature);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(createdAt, id, metadata, name, rateLimit, uid, updatedAt);
+    return Objects.hash(createdAt, id, metadata, name, rateLimit, uid, updatedAt, disableDefaultSignature);
   }
 
   @Override
@@ -258,6 +286,7 @@ public class ApplicationOut {
     sb.append("    rateLimit: ").append(toIndentedString(rateLimit)).append("\n");
     sb.append("    uid: ").append(toIndentedString(uid)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
+    sb.append("    disableDefaultSignature: ").append(toIndentedString(disableDefaultSignature)).append("\n");
     sb.append("}");
     return sb.toString();
   }

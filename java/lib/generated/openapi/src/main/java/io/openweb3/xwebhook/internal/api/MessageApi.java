@@ -72,9 +72,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -155,9 +154,8 @@ public class MessageApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return MessageAttemptOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -183,9 +181,8 @@ public class MessageApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;MessageAttemptOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -213,9 +210,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -243,9 +239,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -325,9 +320,8 @@ public class MessageApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return MessageOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -354,9 +348,8 @@ public class MessageApi {
      * @param idempotencyKey The request&#39;s idempotency key (optional)
      * @return ApiResponse&lt;MessageOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -385,9 +378,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 202 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -414,9 +406,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -485,9 +476,8 @@ public class MessageApi {
      * @param appId The app&#39;s ID or UID (required)
      * @param msgId The msg&#39;s ID or UID (required)
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -510,9 +500,8 @@ public class MessageApi {
      * @param msgId The msg&#39;s ID or UID (required)
      * @return ApiResponse&lt;Void&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -537,9 +526,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> no content </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -565,9 +553,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -642,9 +629,8 @@ public class MessageApi {
      * @param withContent When &#x60;true&#x60; message payloads are included in the response (optional, default to true)
      * @return MessageOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -669,9 +655,8 @@ public class MessageApi {
      * @param withContent When &#x60;true&#x60; message payloads are included in the response (optional, default to true)
      * @return ApiResponse&lt;MessageOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -698,9 +683,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -726,9 +710,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -798,9 +781,8 @@ public class MessageApi {
      * @param msgId The msg&#39;s ID or UID (required)
      * @return MessageRawPayloadOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -824,9 +806,8 @@ public class MessageApi {
      * @param msgId The msg&#39;s ID or UID (required)
      * @return ApiResponse&lt;MessageRawPayloadOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -852,9 +833,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -887,9 +867,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -992,9 +971,8 @@ public class MessageApi {
      * @param eventTypes Filter response based on the event type (optional)
      * @return ListResponseMessageOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1025,9 +1003,8 @@ public class MessageApi {
      * @param eventTypes Filter response based on the event type (optional)
      * @return ApiResponse&lt;ListResponseMessageOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1060,9 +1037,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1092,9 +1068,8 @@ public class MessageApi {
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1182,9 +1157,8 @@ public class MessageApi {
      * @param after  (optional)
      * @return MessageStreamOut
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1212,9 +1186,8 @@ public class MessageApi {
      * @param after  (optional)
      * @return ApiResponse&lt;MessageStreamOut&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>
@@ -1244,9 +1217,8 @@ public class MessageApi {
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * http.response.details
-     <table border="1">
-       <caption>Response Deatails</caption>
+     * @http.response.details
+     <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td>  </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request </td><td>  -  </td></tr>

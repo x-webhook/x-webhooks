@@ -124,9 +124,9 @@
                 "properties": {
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
                         "default": {},
+                        "nullable": true,
                         "type": "object"
                     },
                     "name": {
@@ -156,6 +156,12 @@
                         "minLength": 1,
                         "nullable": true,
                         "type": "string" 
+                    },
+                    "disableDefaultSignature": {
+                        "description": "Disable the webhook server auto generate signature for the request send to this application's endpoint.",
+                        "example": "false",
+                        "nullable": true,
+                        "type": "boolean" 
                     }
                 },
                 "required": [
@@ -176,7 +182,6 @@
                     },
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
                         "type": "object"
                     },
@@ -202,6 +207,12 @@
                     "updatedAt": {
                         "format": "date-time",
                         "type": "string"
+                    },
+                    "disableDefaultSignature": {
+                        "description": "Disable the webhook server auto generate signature for the request send to this application's endpoint.",
+                        "example": "false",
+                        "nullable": true,
+                        "type": "boolean" 
                     }
                 },
                 "required": [
@@ -217,9 +228,9 @@
                 "properties": {
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
-                        "type": "object"
+                        "type": "object",
+                        "nullable": true
                     },
                     "name": {
                         "type": "string"
@@ -238,6 +249,12 @@
                         "nullable": true,
                         "pattern": "^[a-zA-Z0-9\\-_.]+$",
                         "type": "string"
+                    },
+                    "disableDefaultSignature": {
+                        "description": "Disable the webhook server auto generate signature for the request send to this application's endpoint.",
+                        "example": "false",
+                        "nullable": true,
+                        "type": "boolean" 
                     }
                 },
                 "type": "object"
@@ -859,9 +876,9 @@
                     },
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
                         "default": {},
+                        "nullable": true,
                         "type": "object"
                     },                    
                     "headers": {
@@ -872,11 +889,11 @@
                             "X-Example": "123",
                             "X-Foobar": "Bar"
                         },
+                        "nullable": true,
                         "type": "object"
                     },
                     "payloadRules": {
                         "additionalProperties": {
-                            "type": "object"
                         },
                         "description": "The filter rules for the message payload.",
                         "example": {
@@ -1148,7 +1165,6 @@
                     },
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
                         "example": {
                             "X-Example": "123",
@@ -1164,11 +1180,11 @@
                             "X-Example": "123",
                             "X-Foobar": "Bar"
                         },
+                        "nullable": true,
                         "type": "object"
                     },
                     "payloadRules": {
                         "additionalProperties": {
-                            "type": "object"
                         },
                         "description": "The filter rules for the message payload.",
                         "example": {
@@ -1259,8 +1275,8 @@
                     },
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
+                        "nullable": true,
                         "example": {
                             "X-Example": "123",
                             "X-Foobar": "Bar"
@@ -1271,6 +1287,7 @@
                         "additionalProperties": {
                             "type": "string"
                         },
+                        "nullable": true,
                         "example": {
                             "X-Example": "123",
                             "X-Foobar": "Bar"
@@ -1279,7 +1296,6 @@
                     },
                     "payloadRules": {
                         "additionalProperties": {
-                            "type": "object"
                         },
                         "description": "The filter rules for the message payload.",
                         "example": {
@@ -1517,8 +1533,8 @@
                     },
                     "metadata": {
                         "additionalProperties": {
-                            "type": "string"
                         },
+                        "nullable": true,
                         "default": {},
                         "type": "object"
                     },

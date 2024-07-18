@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **description** | **String** |  |  [optional]
 **disabled** | **Boolean** |  |  [optional]
 **filterTypes** | **Set&lt;String&gt;** |  |  [optional]
-**metadata** | **Map&lt;String, String&gt;** |  |  [optional]
+**metadata** | **Map&lt;String, Object&gt;** |  |  [optional]
 **rateLimit** | **Integer** |  |  [optional]
 **uid** | **String** | Optional unique identifier for the endpoint |  [optional]
 **url** | **URI** |  | 
