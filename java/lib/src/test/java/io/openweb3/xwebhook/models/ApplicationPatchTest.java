@@ -76,11 +76,11 @@ public class ApplicationPatchTest {
     }
 
     /**
-     * Test the property 'disableDefaultSignature'
+     * Test the property 'authType'
      */
     @Test
-    public void disableDefaultSignatureTest() {
-        // TODO: test disableDefaultSignature
+    public void authTypeTest() {
+        // TODO: test authType
     }
 
 }

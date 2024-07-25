@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **rateLimit** | **Integer** |  |  [optional]
 **uid** | **String** | The app&#39;s UID |  [optional]
 **updatedAt** | **OffsetDateTime** |  | 
-**disableDefaultSignature** | **Boolean** | Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint. |  [optional]
+**authType** | **String** | The signed authentication type, the default type is hmac. |  [optional]
 
 
 

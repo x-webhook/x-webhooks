@@ -15223,7 +15223,7 @@ components:
         rateLimit: 1
         name: My first application
         description: This is my first application
-        disableDefaultSignature: false
+        authType: hmac
       properties:
         metadata:
           additionalProperties: {}
@@ -15254,12 +15254,11 @@ components:
           minLength: 1
           nullable: true
           type: string
-        disableDefaultSignature:
-          description: Disable the webhook server auto generate signature for the
-            request send to this application's endpoint.
-          example: false
+        authType:
+          description: The signed authentication type, the default type is hmac.
+          example: hmac
           nullable: true
-          type: boolean
+          type: string
       required:
       - name
       type: object
@@ -15272,7 +15271,7 @@ components:
         rateLimit: 0
         name: My first application
         id: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
-        disableDefaultSignature: false
+        authType: hmac
         updatedAt: 2000-01-23T04:56:07.000+00:00
       properties:
         createdAt:
@@ -15304,12 +15303,11 @@ components:
         updatedAt:
           format: date-time
           type: string
-        disableDefaultSignature:
-          description: Disable the webhook server auto generate signature for the
-            request send to this application's endpoint.
-          example: false
+        authType:
+          description: The signed authentication type, the default type is hmac.
+          example: hmac
           nullable: true
-          type: boolean
+          type: string
       required:
       - createdAt
       - id
@@ -15324,7 +15322,7 @@ components:
           key: ""
         rateLimit: 0
         name: name
-        disableDefaultSignature: false
+        authType: hmac
       properties:
         metadata:
           additionalProperties: {}
@@ -15345,12 +15343,11 @@ components:
           nullable: true
           pattern: ^[a-zA-Z0-9\-_.]+$
           type: string
-        disableDefaultSignature:
-          description: Disable the webhook server auto generate signature for the
-            request send to this application's endpoint.
-          example: false
+        authType:
+          description: The signed authentication type, the default type is hmac.
+          example: hmac
           nullable: true
-          type: boolean
+          type: string
       type: object
     ApplicationStats:
       example:
@@ -17685,7 +17682,7 @@ components:
           rateLimit: 0
           name: My first application
           id: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
-          disableDefaultSignature: false
+          authType: hmac
           updatedAt: 2000-01-23T04:56:07.000+00:00
         - createdAt: 2000-01-23T04:56:07.000+00:00
           uid: unique-app-identifier
@@ -17694,7 +17691,7 @@ components:
           rateLimit: 0
           name: My first application
           id: app_1srOrx2ZWZBpBUvZwXKQmoEYga2
-          disableDefaultSignature: false
+          authType: hmac
           updatedAt: 2000-01-23T04:56:07.000+00:00
         prevIterator: -iterator
         done: true
@@ -18878,7 +18875,7 @@ components:
           rateLimit: 1
           name: My first application
           description: This is my first application
-          disableDefaultSignature: false
+          authType: hmac
         channels:
         - project_123
         - group_2

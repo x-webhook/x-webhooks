@@ -16,7 +16,7 @@ package io.openweb3.xwebhook.internal;
 import java.util.Collection;
 import java.util.Iterator;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T23:47:22.834409+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

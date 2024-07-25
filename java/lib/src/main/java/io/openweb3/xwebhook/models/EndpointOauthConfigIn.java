@@ -35,7 +35,7 @@ import java.util.Map;
 /**
  * EndpointOauthConfigIn
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T23:47:22.834409+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
 public class EndpointOauthConfigIn {
   public static final String SERIALIZED_NAME_AUTH_METHOD = "authMethod";
   @SerializedName(SERIALIZED_NAME_AUTH_METHOD)

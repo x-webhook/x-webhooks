@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * ApplicationOut
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T23:47:22.834409+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
 public class ApplicationOut {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -61,9 +61,9 @@ public class ApplicationOut {
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
   private OffsetDateTime updatedAt;
 
-  public static final String SERIALIZED_NAME_DISABLE_DEFAULT_SIGNATURE = "disableDefaultSignature";
-  @SerializedName(SERIALIZED_NAME_DISABLE_DEFAULT_SIGNATURE)
-  private Boolean disableDefaultSignature;
+  public static final String SERIALIZED_NAME_AUTH_TYPE = "authType";
+  @SerializedName(SERIALIZED_NAME_AUTH_TYPE)
+  private String authType;
 
 
   public ApplicationOut createdAt(OffsetDateTime createdAt) {
@@ -228,26 +228,26 @@ public class ApplicationOut {
   }
 
 
-  public ApplicationOut disableDefaultSignature(Boolean disableDefaultSignature) {
+  public ApplicationOut authType(String authType) {
     
-    this.disableDefaultSignature = disableDefaultSignature;
+    this.authType = authType;
     return this;
   }
 
    /**
-   * Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint.
-   * @return disableDefaultSignature
+   * The signed authentication type, the default type is hmac.
+   * @return authType
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "false", value = "Disable the webhook server auto generate signature for the request send to this application's endpoint.")
+  @ApiModelProperty(example = "hmac", value = "The signed authentication type, the default type is hmac.")
 
-  public Boolean getDisableDefaultSignature() {
-    return disableDefaultSignature;
+  public String getAuthType() {
+    return authType;
   }
 
 
-  public void setDisableDefaultSignature(Boolean disableDefaultSignature) {
-    this.disableDefaultSignature = disableDefaultSignature;
+  public void setAuthType(String authType) {
+    this.authType = authType;
   }
 
 
@@ -267,12 +267,12 @@ public class ApplicationOut {
         Objects.equals(this.rateLimit, applicationOut.rateLimit) &&
         Objects.equals(this.uid, applicationOut.uid) &&
         Objects.equals(this.updatedAt, applicationOut.updatedAt) &&
-        Objects.equals(this.disableDefaultSignature, applicationOut.disableDefaultSignature);
+        Objects.equals(this.authType, applicationOut.authType);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(createdAt, id, metadata, name, rateLimit, uid, updatedAt, disableDefaultSignature);
+    return Objects.hash(createdAt, id, metadata, name, rateLimit, uid, updatedAt, authType);
   }
 
   @Override
@@ -286,7 +286,7 @@ public class ApplicationOut {
     sb.append("    rateLimit: ").append(toIndentedString(rateLimit)).append("\n");
     sb.append("    uid: ").append(toIndentedString(uid)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
-    sb.append("    disableDefaultSignature: ").append(toIndentedString(disableDefaultSignature)).append("\n");
+    sb.append("    authType: ").append(toIndentedString(authType)).append("\n");
     sb.append("}");
     return sb.toString();
   }

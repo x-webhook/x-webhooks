@@ -157,11 +157,11 @@
                         "nullable": true,
                         "type": "string" 
                     },
-                    "disableDefaultSignature": {
-                        "description": "Disable the webhook server auto generate signature for the request send to this application's endpoint.",
-                        "example": "false",
+                    "authType": {
+                        "description": "The signed authentication type, the default type is hmac.",
+                        "example": "hmac",
                         "nullable": true,
-                        "type": "boolean" 
+                        "type": "string" 
                     }
                 },
                 "required": [
@@ -208,11 +208,11 @@
                         "format": "date-time",
                         "type": "string"
                     },
-                    "disableDefaultSignature": {
-                        "description": "Disable the webhook server auto generate signature for the request send to this application's endpoint.",
-                        "example": "false",
+                    "authType": {
+                        "description": "The signed authentication type, the default type is hmac.",
+                        "example": "hmac",
                         "nullable": true,
-                        "type": "boolean" 
+                        "type": "string" 
                     }
                 },
                 "required": [
@@ -250,11 +250,11 @@
                         "pattern": "^[a-zA-Z0-9\\-_.]+$",
                         "type": "string"
                     },
-                    "disableDefaultSignature": {
-                        "description": "Disable the webhook server auto generate signature for the request send to this application's endpoint.",
-                        "example": "false",
+                    "authType": {
+                        "description": "The signed authentication type, the default type is hmac.",
+                        "example": "hmac",
                         "nullable": true,
-                        "type": "boolean" 
+                        "type": "string" 
                     }
                 },
                 "type": "object"

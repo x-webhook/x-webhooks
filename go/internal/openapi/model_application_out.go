@@ -26,8 +26,8 @@ type ApplicationOut struct {
 	// The app's UID
 	Uid NullableString `json:"uid,omitempty"`
 	UpdatedAt time.Time `json:"updatedAt"`
-	// Disable the webhook server auto generate signature for the request send to this application's endpoint.
-	DisableDefaultSignature NullableBool `json:"disableDefaultSignature,omitempty"`
+	// The signed authentication type, the default type is hmac.
+	AuthType NullableString `json:"authType,omitempty"`
 }
 
 // NewApplicationOut instantiates a new ApplicationOut object
@@ -256,46 +256,46 @@ func (o *ApplicationOut) SetUpdatedAt(v time.Time) {
 	o.UpdatedAt = v
 }
 
-// GetDisableDefaultSignature returns the DisableDefaultSignature field value if set, zero value otherwise (both if not set or set to explicit null).
-func (o *ApplicationOut) GetDisableDefaultSignature() bool {
-	if o == nil || o.DisableDefaultSignature.Get() == nil {
-		var ret bool
+// GetAuthType returns the AuthType field value if set, zero value otherwise (both if not set or set to explicit null).
+func (o *ApplicationOut) GetAuthType() string {
+	if o == nil || o.AuthType.Get() == nil {
+		var ret string
 		return ret
 	}
-	return *o.DisableDefaultSignature.Get()
+	return *o.AuthType.Get()
 }
 
-// GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field value if set, nil otherwise
+// GetAuthTypeOk returns a tuple with the AuthType field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 // NOTE: If the value is an explicit nil, `nil, true` will be returned
-func (o *ApplicationOut) GetDisableDefaultSignatureOk() (*bool, bool) {
+func (o *ApplicationOut) GetAuthTypeOk() (*string, bool) {
 	if o == nil  {
 		return nil, false
 	}
-	return o.DisableDefaultSignature.Get(), o.DisableDefaultSignature.IsSet()
+	return o.AuthType.Get(), o.AuthType.IsSet()
 }
 
-// HasDisableDefaultSignature returns a boolean if a field has been set.
-func (o *ApplicationOut) HasDisableDefaultSignature() bool {
-	if o != nil && o.DisableDefaultSignature.IsSet() {
+// HasAuthType returns a boolean if a field has been set.
+func (o *ApplicationOut) HasAuthType() bool {
+	if o != nil && o.AuthType.IsSet() {
 		return true
 	}
 
 	return false
 }
 
-// SetDisableDefaultSignature gets a reference to the given NullableBool and assigns it to the DisableDefaultSignature field.
-func (o *ApplicationOut) SetDisableDefaultSignature(v bool) {
-	o.DisableDefaultSignature.Set(&v)
+// SetAuthType gets a reference to the given NullableString and assigns it to the AuthType field.
+func (o *ApplicationOut) SetAuthType(v string) {
+	o.AuthType.Set(&v)
 }
-// SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
-func (o *ApplicationOut) SetDisableDefaultSignatureNil() {
-	o.DisableDefaultSignature.Set(nil)
+// SetAuthTypeNil sets the value for AuthType to be an explicit nil
+func (o *ApplicationOut) SetAuthTypeNil() {
+	o.AuthType.Set(nil)
 }
 
-// UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
-func (o *ApplicationOut) UnsetDisableDefaultSignature() {
-	o.DisableDefaultSignature.Unset()
+// UnsetAuthType ensures that no value is present for AuthType, not even an explicit nil
+func (o *ApplicationOut) UnsetAuthType() {
+	o.AuthType.Unset()
 }
 
 func (o ApplicationOut) MarshalJSON() ([]byte, error) {
@@ -321,8 +321,8 @@ func (o ApplicationOut) MarshalJSON() ([]byte, error) {
 	if true {
 		toSerialize["updatedAt"] = o.UpdatedAt
 	}
-	if o.DisableDefaultSignature.IsSet() {
-		toSerialize["disableDefaultSignature"] = o.DisableDefaultSignature.Get()
+	if o.AuthType.IsSet() {
+		toSerialize["authType"] = o.AuthType.Get()
 	}
 	return json.Marshal(toSerialize)
 }

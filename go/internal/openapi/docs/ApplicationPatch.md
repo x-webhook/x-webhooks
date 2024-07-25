@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** |  | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | The app&#39;s UID | [optional] 
-**DisableDefaultSignature** | Pointer to **NullableBool** | Disable the webhook server auto generate signature for the request send to this application&#39;s endpoint. | [optional] 
+**AuthType** | Pointer to **NullableString** | The signed authentication type, the default type is hmac. | [optional] 
 
 ## Methods
 
@@ -159,41 +159,41 @@ HasUid returns a boolean if a field has been set.
 `func (o *ApplicationPatch) UnsetUid()`
 
 UnsetUid ensures that no value is present for Uid, not even an explicit nil
-### GetDisableDefaultSignature
+### GetAuthType
 
-`func (o *ApplicationPatch) GetDisableDefaultSignature() bool`
+`func (o *ApplicationPatch) GetAuthType() string`
 
-GetDisableDefaultSignature returns the DisableDefaultSignature field if non-nil, zero value otherwise.
+GetAuthType returns the AuthType field if non-nil, zero value otherwise.
 
-### GetDisableDefaultSignatureOk
+### GetAuthTypeOk
 
-`func (o *ApplicationPatch) GetDisableDefaultSignatureOk() (*bool, bool)`
+`func (o *ApplicationPatch) GetAuthTypeOk() (*string, bool)`
 
-GetDisableDefaultSignatureOk returns a tuple with the DisableDefaultSignature field if it's non-nil, zero value otherwise
+GetAuthTypeOk returns a tuple with the AuthType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetDisableDefaultSignature
+### SetAuthType
 
-`func (o *ApplicationPatch) SetDisableDefaultSignature(v bool)`
+`func (o *ApplicationPatch) SetAuthType(v string)`
 
-SetDisableDefaultSignature sets DisableDefaultSignature field to given value.
+SetAuthType sets AuthType field to given value.
 
-### HasDisableDefaultSignature
+### HasAuthType
 
-`func (o *ApplicationPatch) HasDisableDefaultSignature() bool`
+`func (o *ApplicationPatch) HasAuthType() bool`
 
-HasDisableDefaultSignature returns a boolean if a field has been set.
+HasAuthType returns a boolean if a field has been set.
 
-### SetDisableDefaultSignatureNil
+### SetAuthTypeNil
 
-`func (o *ApplicationPatch) SetDisableDefaultSignatureNil(b bool)`
+`func (o *ApplicationPatch) SetAuthTypeNil(b bool)`
 
- SetDisableDefaultSignatureNil sets the value for DisableDefaultSignature to be an explicit nil
+ SetAuthTypeNil sets the value for AuthType to be an explicit nil
 
-### UnsetDisableDefaultSignature
-`func (o *ApplicationPatch) UnsetDisableDefaultSignature()`
+### UnsetAuthType
+`func (o *ApplicationPatch) UnsetAuthType()`
 
-UnsetDisableDefaultSignature ensures that no value is present for DisableDefaultSignature, not even an explicit nil
+UnsetAuthType ensures that no value is present for AuthType, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

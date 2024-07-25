@@ -29,7 +29,7 @@ import java.io.IOException;
  * Sent when a message delivery has failed (all of the retry attempts have been exhausted) as a \&quot;message.attempt.exhausted\&quot; type or after it&#39;s failed four times as a \&quot;message.attempt.failing\&quot; event.
  */
 @ApiModel(description = "Sent when a message delivery has failed (all of the retry attempts have been exhausted) as a \"message.attempt.exhausted\" type or after it's failed four times as a \"message.attempt.failing\" event.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-18T23:47:22.834409+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
 public class MessageAttemptFailingEventData {
   public static final String SERIALIZED_NAME_APP_ID = "appId";
   @SerializedName(SERIALIZED_NAME_APP_ID)
