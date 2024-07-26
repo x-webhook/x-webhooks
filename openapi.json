@@ -233,7 +233,8 @@
                         "nullable": true
                     },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "nullable": true
                     },
                     "rateLimit": {
                         "format": "uint16",
@@ -892,7 +893,7 @@
                         "nullable": true,
                         "type": "object"
                     },
-                    "payloadRules": {
+                    "rules": {
                         "additionalProperties": {
                         },
                         "description": "The filter rules for the message payload.",
@@ -1183,7 +1184,7 @@
                         "nullable": true,
                         "type": "object"
                     },
-                    "payloadRules": {
+                    "rules": {
                         "additionalProperties": {
                         },
                         "description": "The filter rules for the message payload.",
@@ -1294,7 +1295,7 @@
                         },
                         "type": "object"
                     },
-                    "payloadRules": {
+                    "rules": {
                         "additionalProperties": {
                         },
                         "description": "The filter rules for the message payload.",
