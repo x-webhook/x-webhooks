@@ -33,7 +33,7 @@ import java.util.Set;
  * A model containing information on a given message plus additional fields on the last attempt for that message.
  */
 @ApiModel(description = "A model containing information on a given message plus additional fields on the last attempt for that message.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
 public class EndpointMessageOut {
   public static final String SERIALIZED_NAME_CHANNELS = "channels";
   @SerializedName(SERIALIZED_NAME_CHANNELS)

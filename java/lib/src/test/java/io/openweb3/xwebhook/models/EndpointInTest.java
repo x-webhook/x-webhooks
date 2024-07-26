@@ -95,11 +95,11 @@ public class EndpointInTest {
     }
 
     /**
-     * Test the property 'payloadRules'
+     * Test the property 'rules'
      */
     @Test
-    public void payloadRulesTest() {
-        // TODO: test payloadRules
+    public void rulesTest() {
+        // TODO: test rules
     }
 
     /**

@@ -33,7 +33,7 @@ import java.util.Set;
 /**
  * EndpointPatch
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
 public class EndpointPatch {
   public static final String SERIALIZED_NAME_CHANNELS = "channels";
   @SerializedName(SERIALIZED_NAME_CHANNELS)
@@ -59,9 +59,9 @@ public class EndpointPatch {
   @SerializedName(SERIALIZED_NAME_HEADERS)
   private Map<String, String> headers = null;
 
-  public static final String SERIALIZED_NAME_PAYLOAD_RULES = "payloadRules";
-  @SerializedName(SERIALIZED_NAME_PAYLOAD_RULES)
-  private Map<String, Object> payloadRules = null;
+  public static final String SERIALIZED_NAME_RULES = "rules";
+  @SerializedName(SERIALIZED_NAME_RULES)
+  private Map<String, Object> rules = null;
 
   public static final String SERIALIZED_NAME_RATE_LIMIT = "rateLimit";
   @SerializedName(SERIALIZED_NAME_RATE_LIMIT)
@@ -254,34 +254,34 @@ public class EndpointPatch {
   }
 
 
-  public EndpointPatch payloadRules(Map<String, Object> payloadRules) {
+  public EndpointPatch rules(Map<String, Object> rules) {
     
-    this.payloadRules = payloadRules;
+    this.rules = rules;
     return this;
   }
 
-  public EndpointPatch putPayloadRulesItem(String key, Object payloadRulesItem) {
-    if (this.payloadRules == null) {
-      this.payloadRules = new HashMap<>();
+  public EndpointPatch putRulesItem(String key, Object rulesItem) {
+    if (this.rules == null) {
+      this.rules = new HashMap<>();
     }
-    this.payloadRules.put(key, payloadRulesItem);
+    this.rules.put(key, rulesItem);
     return this;
   }
 
    /**
    * The filter rules for the message payload.
-   * @return payloadRules
+   * @return rules
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(example = "{\"type\":\"tx.created\",\"chain\":\"ton\",\"amount\":{\"$gt\":\"400\"}}", value = "The filter rules for the message payload.")
 
-  public Map<String, Object> getPayloadRules() {
-    return payloadRules;
+  public Map<String, Object> getRules() {
+    return rules;
   }
 
 
-  public void setPayloadRules(Map<String, Object> payloadRules) {
-    this.payloadRules = payloadRules;
+  public void setRules(Map<String, Object> rules) {
+    this.rules = rules;
   }
 
 
@@ -417,7 +417,7 @@ public class EndpointPatch {
         Objects.equals(this.filterTypes, endpointPatch.filterTypes) &&
         Objects.equals(this.metadata, endpointPatch.metadata) &&
         Objects.equals(this.headers, endpointPatch.headers) &&
-        Objects.equals(this.payloadRules, endpointPatch.payloadRules) &&
+        Objects.equals(this.rules, endpointPatch.rules) &&
         Objects.equals(this.rateLimit, endpointPatch.rateLimit) &&
         Objects.equals(this.secret, endpointPatch.secret) &&
         Objects.equals(this.uid, endpointPatch.uid) &&
@@ -427,7 +427,7 @@ public class EndpointPatch {
 
   @Override
   public int hashCode() {
-    return Objects.hash(channels, description, disabled, filterTypes, metadata, headers, payloadRules, rateLimit, secret, uid, url, version);
+    return Objects.hash(channels, description, disabled, filterTypes, metadata, headers, rules, rateLimit, secret, uid, url, version);
   }
 
   @Override
@@ -440,7 +440,7 @@ public class EndpointPatch {
     sb.append("    filterTypes: ").append(toIndentedString(filterTypes)).append("\n");
     sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("    headers: ").append(toIndentedString(headers)).append("\n");
-    sb.append("    payloadRules: ").append(toIndentedString(payloadRules)).append("\n");
+    sb.append("    rules: ").append(toIndentedString(rules)).append("\n");
     sb.append("    rateLimit: ").append(toIndentedString(rateLimit)).append("\n");
     sb.append("    secret: ").append(toIndentedString(secret)).append("\n");
     sb.append("    uid: ").append(toIndentedString(uid)).append("\n");

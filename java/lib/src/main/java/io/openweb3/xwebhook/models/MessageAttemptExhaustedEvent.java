@@ -29,7 +29,7 @@ import java.io.IOException;
  * Sent when a message delivery has failed (all of the retry attempts have been exhausted).
  */
 @ApiModel(description = "Sent when a message delivery has failed (all of the retry attempts have been exhausted).")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
 public class MessageAttemptExhaustedEvent {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)

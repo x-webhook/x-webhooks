@@ -34,7 +34,7 @@ import java.util.Set;
 /**
  * EndpointOut
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-25T20:33:19.360168+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
 public class EndpointOut {
   public static final String SERIALIZED_NAME_CHANNELS = "channels";
   @SerializedName(SERIALIZED_NAME_CHANNELS)
@@ -68,9 +68,9 @@ public class EndpointOut {
   @SerializedName(SERIALIZED_NAME_HEADERS)
   private Map<String, String> headers = null;
 
-  public static final String SERIALIZED_NAME_PAYLOAD_RULES = "payloadRules";
-  @SerializedName(SERIALIZED_NAME_PAYLOAD_RULES)
-  private Map<String, Object> payloadRules = null;
+  public static final String SERIALIZED_NAME_RULES = "rules";
+  @SerializedName(SERIALIZED_NAME_RULES)
+  private Map<String, Object> rules = null;
 
   public static final String SERIALIZED_NAME_RATE_LIMIT = "rateLimit";
   @SerializedName(SERIALIZED_NAME_RATE_LIMIT)
@@ -302,34 +302,34 @@ public class EndpointOut {
   }
 
 
-  public EndpointOut payloadRules(Map<String, Object> payloadRules) {
+  public EndpointOut rules(Map<String, Object> rules) {
     
-    this.payloadRules = payloadRules;
+    this.rules = rules;
     return this;
   }
 
-  public EndpointOut putPayloadRulesItem(String key, Object payloadRulesItem) {
-    if (this.payloadRules == null) {
-      this.payloadRules = new HashMap<>();
+  public EndpointOut putRulesItem(String key, Object rulesItem) {
+    if (this.rules == null) {
+      this.rules = new HashMap<>();
     }
-    this.payloadRules.put(key, payloadRulesItem);
+    this.rules.put(key, rulesItem);
     return this;
   }
 
    /**
    * The filter rules for the message payload.
-   * @return payloadRules
+   * @return rules
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(example = "{\"type\":\"tx.created\",\"chain\":\"ton\",\"amount\":{\"$gt\":\"400\"}}", value = "The filter rules for the message payload.")
 
-  public Map<String, Object> getPayloadRules() {
-    return payloadRules;
+  public Map<String, Object> getRules() {
+    return rules;
   }
 
 
-  public void setPayloadRules(Map<String, Object> payloadRules) {
-    this.payloadRules = payloadRules;
+  public void setRules(Map<String, Object> rules) {
+    this.rules = rules;
   }
 
 
@@ -464,7 +464,7 @@ public class EndpointOut {
         Objects.equals(this.id, endpointOut.id) &&
         Objects.equals(this.metadata, endpointOut.metadata) &&
         Objects.equals(this.headers, endpointOut.headers) &&
-        Objects.equals(this.payloadRules, endpointOut.payloadRules) &&
+        Objects.equals(this.rules, endpointOut.rules) &&
         Objects.equals(this.rateLimit, endpointOut.rateLimit) &&
         Objects.equals(this.uid, endpointOut.uid) &&
         Objects.equals(this.updatedAt, endpointOut.updatedAt) &&
@@ -474,7 +474,7 @@ public class EndpointOut {
 
   @Override
   public int hashCode() {
-    return Objects.hash(channels, createdAt, description, disabled, filterTypes, id, metadata, headers, payloadRules, rateLimit, uid, updatedAt, url, version);
+    return Objects.hash(channels, createdAt, description, disabled, filterTypes, id, metadata, headers, rules, rateLimit, uid, updatedAt, url, version);
   }
 
   @Override
@@ -489,7 +489,7 @@ public class EndpointOut {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    metadata: ").append(toIndentedString(metadata)).append("\n");
     sb.append("    headers: ").append(toIndentedString(headers)).append("\n");
-    sb.append("    payloadRules: ").append(toIndentedString(payloadRules)).append("\n");
+    sb.append("    rules: ").append(toIndentedString(rules)).append("\n");
     sb.append("    rateLimit: ").append(toIndentedString(rateLimit)).append("\n");
     sb.append("    uid: ").append(toIndentedString(uid)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");

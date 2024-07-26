@@ -15190,6 +15190,7 @@ components:
           nullable: true
           type: object
         name:
+          nullable: true
           type: string
         rateLimit:
           format: uint16
@@ -15722,7 +15723,7 @@ components:
         - group_2
         description: An example endpoint name
         disabled: false
-        payloadRules:
+        rules:
           type: tx.created
           chain: ton
           amount:
@@ -15785,7 +15786,7 @@ components:
             X-Foobar: Bar
           nullable: true
           type: object
-        payloadRules:
+        rules:
           additionalProperties: {}
           description: The filter rules for the message payload.
           example:
@@ -16002,6 +16003,11 @@ components:
           X-Foobar: Bar
         rateLimit: 0
         description: description
+        rules:
+          type: tx.created
+          chain: ton
+          amount:
+            $gt: "400"
         version: 1
         url: https://example.com/webhook/
         createdAt: 2000-01-23T04:56:07.000+00:00
@@ -16010,11 +16016,6 @@ components:
         - project_123
         - group_2
         disabled: false
-        payloadRules:
-          type: tx.created
-          chain: ton
-          amount:
-            $gt: "400"
         id: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
         filterTypes:
         - user.signup
@@ -16079,7 +16080,7 @@ components:
             X-Foobar: Bar
           nullable: true
           type: object
-        payloadRules:
+        rules:
           additionalProperties: {}
           description: The filter rules for the message payload.
           example:
@@ -16141,7 +16142,7 @@ components:
         - project_1337
         description: description
         disabled: true
-        payloadRules:
+        rules:
           type: tx.created
           chain: ton
           amount:
@@ -16191,7 +16192,7 @@ components:
             X-Foobar: Bar
           nullable: true
           type: object
-        payloadRules:
+        rules:
           additionalProperties: {}
           description: The filter rules for the message payload.
           example:
@@ -17702,6 +17703,11 @@ components:
             X-Foobar: Bar
           rateLimit: 0
           description: description
+          rules:
+            type: tx.created
+            chain: ton
+            amount:
+              $gt: "400"
           version: 1
           url: https://example.com/webhook/
           createdAt: 2000-01-23T04:56:07.000+00:00
@@ -17710,11 +17716,6 @@ components:
           - project_123
           - group_2
           disabled: false
-          payloadRules:
-            type: tx.created
-            chain: ton
-            amount:
-              $gt: "400"
           id: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
           filterTypes:
           - user.signup
@@ -17728,6 +17729,11 @@ components:
             X-Foobar: Bar
           rateLimit: 0
           description: description
+          rules:
+            type: tx.created
+            chain: ton
+            amount:
+              $gt: "400"
           version: 1
           url: https://example.com/webhook/
           createdAt: 2000-01-23T04:56:07.000+00:00
@@ -17736,11 +17742,6 @@ components:
           - project_123
           - group_2
           disabled: false
-          payloadRules:
-            type: tx.created
-            chain: ton
-            amount:
-              $gt: "400"
           id: ep_1srOrx2ZWZBpBUvZwXKQmoEYga2
           filterTypes:
           - user.signup

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **FilterTypes** | Pointer to **[]string** |  | [optional] 
 **Metadata** | Pointer to **map[string]interface{}** |  | [optional] 
 **Headers** | Pointer to **map[string]string** |  | [optional] 
-**PayloadRules** | Pointer to **map[string]interface{}** | The filter rules for the message payload. | [optional] 
+**Rules** | Pointer to **map[string]interface{}** | The filter rules for the message payload. | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Secret** | Pointer to **NullableString** | The endpoint&#39;s verification secret. If &#x60;null&#x60; is passed, a secret is automatically generated. Format: &#x60;base64&#x60; encoded random bytes optionally prefixed with &#x60;whsec_&#x60;. Recommended size: 24. | [optional] 
 **Uid** | Pointer to **NullableString** | The ep&#39;s UID | [optional] 
@@ -226,41 +226,41 @@ HasHeaders returns a boolean if a field has been set.
 `func (o *EndpointPatch) UnsetHeaders()`
 
 UnsetHeaders ensures that no value is present for Headers, not even an explicit nil
-### GetPayloadRules
+### GetRules
 
-`func (o *EndpointPatch) GetPayloadRules() map[string]interface{}`
+`func (o *EndpointPatch) GetRules() map[string]interface{}`
 
-GetPayloadRules returns the PayloadRules field if non-nil, zero value otherwise.
+GetRules returns the Rules field if non-nil, zero value otherwise.
 
-### GetPayloadRulesOk
+### GetRulesOk
 
-`func (o *EndpointPatch) GetPayloadRulesOk() (*map[string]interface{}, bool)`
+`func (o *EndpointPatch) GetRulesOk() (*map[string]interface{}, bool)`
 
-GetPayloadRulesOk returns a tuple with the PayloadRules field if it's non-nil, zero value otherwise
+GetRulesOk returns a tuple with the Rules field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetPayloadRules
+### SetRules
 
-`func (o *EndpointPatch) SetPayloadRules(v map[string]interface{})`
+`func (o *EndpointPatch) SetRules(v map[string]interface{})`
 
-SetPayloadRules sets PayloadRules field to given value.
+SetRules sets Rules field to given value.
 
-### HasPayloadRules
+### HasRules
 
-`func (o *EndpointPatch) HasPayloadRules() bool`
+`func (o *EndpointPatch) HasRules() bool`
 
-HasPayloadRules returns a boolean if a field has been set.
+HasRules returns a boolean if a field has been set.
 
-### SetPayloadRulesNil
+### SetRulesNil
 
-`func (o *EndpointPatch) SetPayloadRulesNil(b bool)`
+`func (o *EndpointPatch) SetRulesNil(b bool)`
 
- SetPayloadRulesNil sets the value for PayloadRules to be an explicit nil
+ SetRulesNil sets the value for Rules to be an explicit nil
 
-### UnsetPayloadRules
-`func (o *EndpointPatch) UnsetPayloadRules()`
+### UnsetRules
+`func (o *EndpointPatch) UnsetRules()`
 
-UnsetPayloadRules ensures that no value is present for PayloadRules, not even an explicit nil
+UnsetRules ensures that no value is present for Rules, not even an explicit nil
 ### GetRateLimit
 
 `func (o *EndpointPatch) GetRateLimit() int32`

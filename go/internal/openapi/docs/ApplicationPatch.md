@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Metadata** | Pointer to **map[string]interface{}** |  | [optional] 
-**Name** | Pointer to **string** |  | [optional] 
+**Name** | Pointer to **NullableString** |  | [optional] 
 **RateLimit** | Pointer to **NullableInt32** |  | [optional] 
 **Uid** | Pointer to **NullableString** | The app&#39;s UID | [optional] 
 **AuthType** | Pointer to **NullableString** | The signed authentication type, the default type is hmac. | [optional] 
@@ -89,6 +89,16 @@ SetName sets Name field to given value.
 
 HasName returns a boolean if a field has been set.
 
+### SetNameNil
+
+`func (o *ApplicationPatch) SetNameNil(b bool)`
+
+ SetNameNil sets the value for Name to be an explicit nil
+
+### UnsetName
+`func (o *ApplicationPatch) UnsetName()`
+
+UnsetName ensures that no value is present for Name, not even an explicit nil
 ### GetRateLimit
 
 `func (o *ApplicationPatch) GetRateLimit() int32`
