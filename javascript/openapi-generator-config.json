@@ -1,5 +1,9 @@
 {
   "npmName": "xwebhook",
   "useObjectParameters": true,
-  "supportsES6": true
+  "supportsES6": true,
+  "modelMapping": {
+    "AnyType": "any",
+    "URI": "string"
+  }
 }

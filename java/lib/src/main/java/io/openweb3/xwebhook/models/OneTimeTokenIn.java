@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * OneTimeTokenIn
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-03T02:14:02.049300+08:00[Asia/Shanghai]")
 public class OneTimeTokenIn {
   public static final String SERIALIZED_NAME_ONE_TIME_TOKEN = "oneTimeToken";
   @SerializedName(SERIALIZED_NAME_ONE_TIME_TOKEN)

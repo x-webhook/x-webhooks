@@ -29,7 +29,7 @@ import java.io.IOException;
  * Sent after a message has been failing for a few times. It&#39;s sent on the fourth failure. It complements &#x60;message.attempt.exhausted&#x60; which is sent after the last failure.
  */
 @ApiModel(description = "Sent after a message has been failing for a few times. It's sent on the fourth failure. It complements `message.attempt.exhausted` which is sent after the last failure.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-03T02:14:02.049300+08:00[Asia/Shanghai]")
 public class MessageAttemptFailingEvent {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)

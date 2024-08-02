@@ -107,7 +107,9 @@ test("partial signature throws error", () => {
   const wh = new Webhook("MfKQ9r8GKYqrTwjUPD8ILPZIo2LaLaSw");
 
   const testPayload = new TestPayload();
-  testPayload.header["xwebhook-signature"] = testPayload.header["xwebhook-signature"].slice(0, 8);
+  testPayload.header["xwebhook-signature"] = testPayload.header[
+    "xwebhook-signature"
+  ].slice(0, 8);
 
   expect(() => {
     wh.verify(testPayload.payload, testPayload.header);

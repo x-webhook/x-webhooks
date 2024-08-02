@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * CustomColorPalette
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-26T22:26:32.587823+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-03T02:14:02.049300+08:00[Asia/Shanghai]")
 public class CustomColorPalette {
   public static final String SERIALIZED_NAME_BACKGROUND_HOVER = "backgroundHover";
   @SerializedName(SERIALIZED_NAME_BACKGROUND_HOVER)
