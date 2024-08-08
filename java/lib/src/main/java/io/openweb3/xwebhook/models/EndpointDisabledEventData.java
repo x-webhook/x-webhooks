@@ -29,7 +29,7 @@ import java.time.OffsetDateTime;
  * Sent when an endpoint has been automatically disabled after continuous failures.
  */
 @ApiModel(description = "Sent when an endpoint has been automatically disabled after continuous failures.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-03T02:14:02.049300+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-08T17:18:16.954530+08:00[Asia/Shanghai]")
 public class EndpointDisabledEventData {
   public static final String SERIALIZED_NAME_APP_ID = "appId";
   @SerializedName(SERIALIZED_NAME_APP_ID)

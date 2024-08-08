@@ -32,7 +32,7 @@ import java.time.OffsetDateTime;
 /**
  * MessageAttemptEndpointOut
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-03T02:14:02.049300+08:00[Asia/Shanghai]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-08T17:18:16.954530+08:00[Asia/Shanghai]")
 public class MessageAttemptEndpointOut {
   public static final String SERIALIZED_NAME_ENDPOINT_ID = "endpointId";
   @SerializedName(SERIALIZED_NAME_ENDPOINT_ID)
