@@ -18940,6 +18940,7 @@ components:
           example:
             X-Example: "123"
             X-Foobar: Bar
+          nullable: true
           type: object
         tags:
           description: List of free-form tags that can be filtered by when listing

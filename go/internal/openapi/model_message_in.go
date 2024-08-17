@@ -25,7 +25,7 @@ type MessageIn struct {
 	EventType string `json:"eventType"`
 	Payload map[string]interface{} `json:"payload"`
 	PayloadRetentionPeriod *int64 `json:"payloadRetentionPeriod,omitempty"`
-	Headers *map[string]string `json:"headers,omitempty"`
+	Headers map[string]string `json:"headers,omitempty"`
 	// List of free-form tags that can be filtered by when listing messages
 	Tags []string `json:"tags,omitempty"`
 	// Extra parameters to pass to Transformations (for future use)
@@ -242,22 +242,23 @@ func (o *MessageIn) SetPayloadRetentionPeriod(v int64) {
 	o.PayloadRetentionPeriod = &v
 }
 
-// GetHeaders returns the Headers field value if set, zero value otherwise.
+// GetHeaders returns the Headers field value if set, zero value otherwise (both if not set or set to explicit null).
 func (o *MessageIn) GetHeaders() map[string]string {
-	if o == nil || o.Headers == nil {
+	if o == nil  {
 		var ret map[string]string
 		return ret
 	}
-	return *o.Headers
+	return o.Headers
 }
 
 // GetHeadersOk returns a tuple with the Headers field value if set, nil otherwise
 // and a boolean to check if the value has been set.
+// NOTE: If the value is an explicit nil, `nil, true` will be returned
 func (o *MessageIn) GetHeadersOk() (*map[string]string, bool) {
 	if o == nil || o.Headers == nil {
 		return nil, false
 	}
-	return o.Headers, true
+	return &o.Headers, true
 }
 
 // HasHeaders returns a boolean if a field has been set.
@@ -271,7 +272,7 @@ func (o *MessageIn) HasHeaders() bool {
 
 // SetHeaders gets a reference to the given map[string]string and assigns it to the Headers field.
 func (o *MessageIn) SetHeaders(v map[string]string) {
-	o.Headers = &v
+	o.Headers = v
 }
 
 // GetTags returns the Tags field value if set, zero value otherwise (both if not set or set to explicit null).
